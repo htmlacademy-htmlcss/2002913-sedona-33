@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Семён Крекотун](https://up.htmlacademy.ru/htmlcss/33/user/2002913).
-* Наставник: [Сергей Артёмов] (https://htmlacademy.ru/profile/firefoxic):)
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 
 ---
