@@ -84,10 +84,51 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Тип жилья</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="type-of-house" value="hotels" checked>
+                  Гостиницы
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="type-of-house" value="motels">
+                  Мотели
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="type-of-house" value="apartments">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">
+              Стоимость,<span class="catalog-filter-item">Р</span>:
+            </legend>
+            <label class="control">
+              <input class="control-input" type="text" value="0">
+              от
+            </label>
+            <label class="control">
+              <input class="control-input" type="text" value="9000">
+              до
+            </label>
+            <div class="slider"></div>
           </fieldset>
           <button class="button" type="submit">применить</button>
           <button class="button" type="submit">сбросить</button>
         </form>
+        <select class="select-control" area-lable="Сортировка">
+          <option value="cheap">Сначала дешёвые</option>
+        </select>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a class="visually-hidden" href="#">Показать список</a>
       </section>
       <section class="mailing-list">
         <form class="mailing-list-form" action="https://echo.htmlacademy.ru/">
