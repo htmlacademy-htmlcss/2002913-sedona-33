@@ -122,13 +122,31 @@
           <button class="button" type="submit">применить</button>
           <button class="button" type="submit">сбросить</button>
         </form>
-        <select class="select-control" area-lable="Сортировка">
-          <option value="cheap">Сначала дешёвые</option>
-        </select>
+        <form class="sorting-type">
+        <details class="select-control" aria-label="Сортировка">
+          <summary>Сначала дешёвые</summary>
+          <ul class="sorting-list">
+            <li class="sorting-item">
+              <a href="">Сначала дешёвые</a>
+            </li>
+            <li class="sorting-item">
+              <a href="е">Сначала дороги</a>
+            </li>
+            <li class="sorting-item">
+              <a href="">Сначала популярные</a>
+            </li>
+          </ul>
+        </details>
+        </form>
         <a class="button" href="#">
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a class="visually-hidden" href="#">Показать список</a>
+        <a class="button" href="#">
+          <span class="visually-hiden">Показать слайды</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать список</span>
+        </a>
       </section>
       <section class="mailing-list">
         <form class="mailing-list-form" action="https://echo.htmlacademy.ru/">
