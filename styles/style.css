@@ -1,0 +1,124 @@
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  scr: url("fonts/ptsana-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  scr: url("fonts/ptsana-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #f2f2f2;
+  color: #000000;
+  width: 1200px;
+  height: auto;
+}
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color:#756257;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-header {
+  background: #f2f2f2;
+  color: #000000;
+}
+
+.navigator-link {
+  font-family: "PT Sans" sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.about {
+  width: 1200px;
+  height: 485px;
+  background-color: #ffffff;
+  background-image: url("../images/welcome/divider.svg"), url("../images/welcome/index-background.jpg");
+  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom, top;
+  text-align: center;
+}
+
+.welcome-logo {
+  text-align: center;
+}
+
+.advantage {
+  background-color: #ffffff;
+  color: #000000;
+}
+}
+
+.advantage-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantage-list-item-img {
+  background-color: #83b3d3;
+  color: #ffffff;
+}
+
+.advantage-city-item:nth-child(odd) {
+  background-color: #83b3d3;
+}
+
+.advantage-list-item:nth-child(2n) {
+  background-color: #83b3d3 20%;
+}
+
+.advantage-list-item:nth-child(odd) {
+  background-color: #83b3d3 12%;
+}
+.advantage-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+.hotel-search {
+  line-height: 26px;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+.mailing-list {
+  background-color: #83B3D3;
+  background-image: url(../images/background-email.jpg);
+  height: 411px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: auto;
+}
+
+.mailing-list-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
