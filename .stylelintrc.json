@@ -157,3 +157,19 @@
     "number-max-precision": 2
   }
 }
+"editor.codeActionsOnSave": {
+  "source.fixAll.stylelint": true
+},
+"stylelint.validate": [
+   "css",
+   "less",
+   "postcss",
+   "sass",
+   "scss",
+   "source.css.styled",
+   "styled-css",
+   "svelte",
+   "vue",
+   "vue-html",
+   "vue-postcss"
+],
