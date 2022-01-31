@@ -6,7 +6,6 @@
   scr: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
