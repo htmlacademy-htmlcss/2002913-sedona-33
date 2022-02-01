@@ -12,7 +12,7 @@
   src: url("//fonts/ptsans-700.woff2");
   font-style: normal;
   font-weight: 700;
-  font-display: samp;
+  font-display: swap;
 }
 
 body {
@@ -168,7 +168,6 @@ body {
   height: 411px;
   text-align: center;
   color: #ffffff;
-  padding: auto;
 }
 
 .mailing-list-title {
@@ -304,7 +303,7 @@ body {
   background-color: #68a2ca;
   width: 620px;
   height: 60px;
-  border-radius: 4;
+  border-radius: 4px;
 }
 
 .hotel-showmore-button {
@@ -343,5 +342,4 @@ body {
   color: #000000;
   height: 411px;
   text-align: center;
-  padding: auto;
 }
