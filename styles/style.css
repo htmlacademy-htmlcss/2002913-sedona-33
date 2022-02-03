@@ -66,12 +66,9 @@ body {
   line-height: 20px;
 }
 
-.navigation-item-search::after {
-  content: "";
+.navigator-link.search {
   background-image: url("/images/icons/search.svg");
-  width: 18px;
-  height: 18px;
-  position: absolute;
+  background-repeat: no-repeat;
 }
 
 .navigator-link.favorit {
@@ -79,6 +76,7 @@ body {
   width: 18px;
   height: 17px;
   position: absolute;
+  background-repeat: no-repeat;
 }
 
 .about {
@@ -207,6 +205,23 @@ body {
   display: inline-block;
   margin-left: auto;
 }
+
+
+.footer-social-item.twitter {
+  background-image: url("/images/icons/social-twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-social-item.facebook {
+  background-image: url("/images/icons/social-facebook.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-social-item.youtube {
+  background-image: url("/images/icons/social-youtube.svg");
+  background-repeat: no-repeat;
+}
+
 
 .catalog-body {
   font-family: "PT Sans", sans-serif;
