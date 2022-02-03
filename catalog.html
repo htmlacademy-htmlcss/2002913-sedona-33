@@ -5,11 +5,11 @@
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/style.css">
   </head>
-  <body>
+  <body class="catalog-body">
     <header>
       <nav class="navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="images/header/logo.svg" width="139px" height="70px" alt="Логотип Седона">
+          <img src="images/header/logo.svg" width="139" height="70" alt="Логотип Седона">
         </a>
         <ul class="navigator-list">
           <li class="navigation-item">
@@ -38,10 +38,11 @@
               </a>
           </li>
             </ul>
-            <a class="navigator-link navigation-link-current" href="catalog.html">ХОЧУ СЮДА!</a>
+            <a class="navigator-link button navigation-link-current" href="catalog.html">хочу сюда!</a>
        </nav>
     </header>
     <main class="main-inner">
+      <section class="inner-filter-section">
       <header class="inner-header">
         <h1 class="inner-header-title">
           Гостиницы Седоны
@@ -57,7 +58,6 @@
           </li>
         </ul>
       </header>
-      <section class="catalog-hotels">
         <h2 class="visually-hidden">список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -116,9 +116,12 @@
             </label>
             <div class="slider"></div>
           </fieldset>
-          <button class="button" type="submit">применить</button>
-          <button class="button" type="reset">сбросить</button>
+          <button class="button-filter" type="submit">применить</button>
+          <button class="button-filter" type="reset">сбросить</button>
         </form>
+      </section>
+    <div class="filter-catalog">
+      <h3 class="filter-catalog-title">Найдено гостиниц: 38</h3>
         <form class="sorting-type">
         <details class="select-control" aria-label="Сортировка">
           <summary>Сначала дешёвые</summary>
@@ -139,16 +142,18 @@
           <span class="visually-hidden">Показать карточки</span>
         </button>
         <button class="button-slide" type="button">
-          <span class="visually-hiden">Показать слайды</span>
+          <span class="visually-hidden">Показать слайды</span>
         </button>
         <button class="button-list">
           <span class="visually-hidden">Показать список</span>
         </button>
+    </div>
+    <div class="catalog-hotel-list"></div>
       <ul class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
             <h3>Amara Resort & Spa</h3>
-            <img src="images/catalog/catalog-spa.jpg" width="299px" height="206px" alt="Здание расположенное в скале на фоне облаков">
+            <img src="images/catalog/catalog-spa.jpg" width="299" height="206" alt="Здание расположенное в скале на фоне облаков">
           </a>
           <p>Гостиница
             <span class="hotel-card-price">
@@ -158,14 +163,14 @@
           <a class="hotel-card-button button" href="#">Подробнее</a>
           <a class="hotel-card-button button" href="#">В избранное</a>
           <p>
-            <span class="visually-hidden">Статус 4 звезды</span>
+            <span class="visually-hidden four-stars">Статус 4 звезды</span>
             <span class="hotel-card-rating">РЕЙТИНГ:8,5</span>
           </p>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
             <h3>Desert Quail Inn</h3>
-            <img src="images/catalog/Catalog-desert.jpg" width="299px" height="206px" alt="Трехэтажное здание отеля,кирпичного цвета,в окружении деревьев,на фоне скалы">
+            <img src="images/catalog/Catalog-desert.jpg" width="299" height="206" alt="Трехэтажное здание отеля,кирпичного цвета,в окружении деревьев,на фоне скалы">
           </a>
           <p>Гостиница
             <span class="hotel-card-price">
@@ -182,7 +187,7 @@
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
             <h3>Villas at Poco Diablo</h3>
-            <img src="images/catalog/Catalog-villas.jpg" width="299px" height="206px" alt="красивая скада с двумя пиками и зеленью у подножья">
+            <img src="images/catalog/Catalog-villas.jpg" width="299" height="206" alt="красивая скада с двумя пиками и зеленью у подножья">
           </a>
           <p>Гостиница
             <span class="hotel-card-price">
@@ -199,7 +204,7 @@
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
             <h3>GreenTree Inn</h3>
-            <img src="images/catalog/Catalog-greentree.jpg" width="299px" height="206px" alt="Горная,извилистая дорога с высоты птичьего полета">
+            <img src="images/catalog/Catalog-greentree.jpg" width="299" height="206" alt="Горная,извилистая дорога с высоты птичьего полета">
           </a>
           <p>Гостиница
             <span class="hotel-card-price">
@@ -210,11 +215,13 @@
           <a class="hotel-card-button button" href="#">В избранное</a>
           <p>
             <span class="visually-hidden">Статус 2 звезды</span>
-            <span class="hotel-card-rating">РЕЙТИНГ:9,2</span>
+            <span class="hotel-card-rating">рейтинг:9,2</span>
           </p>
         </li>
       </ul>
-      <p><a class="hotel-showmore-button button" href="">Загрузить ещё</a></p>
+      <div class="button-more">
+      <a class="hotel-showmore-button" href="">Загрузить ещё</a>
+      </div>
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link" href="#">1</a>
@@ -229,9 +236,7 @@
           <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-showmore" href="#">
-            <span class="pagination-showmore visually-hidden">Показать ещё</span>
-          </a>
+          <a class="pagination-link pagination-showmore" href="#">...</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
@@ -244,19 +249,18 @@
         <option value="6">6</option>
       </select>
     </label>
-    </section>
-      <section class="mailing-list">
+      <section class="mailing-list-catalog">
         <form class="mailing-list-form" action="https://echo.htmlacademy.ru/">
           <h3 class="mailing-list-title">Подпишитесь на рассылку</h3>
           <p class="mailing-list-description">
-            Только полезная информация и никакого спама, честное бойскаутское!
+            Только полезная информация и никакого спама,<br>честное бойскаутское!
           </p>
-          <label><input type="email" placeholder="Ваш e-mail"></label>
-          <button type="submit" value="subscript">Подписаться</button>
+          <label><input class="subscript-field" type="email" placeholder="Ваш e-mail"></label>
+          <button class="button-subscript" type="submit" value="subscript">Подписаться</button>
         </form>
       </section>
     </main>
-    <footer class="catalog-footer">
+    <footer class="footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">

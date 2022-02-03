@@ -9,7 +9,7 @@
     <header class="main-header">
       <nav class="navigation">
         <a class="main-header-logo" href="#">
-          <img class="logo" src="images/header/logo.svg" alt="Логотип Седона" width="139px" height="70px">
+          <img class="logo" src="/images/icons/logo.svg" alt="Логотип Седона" width="139" height="70">
         </a>
         <ul class="navigator-list">
           <li class="navigation-item">
@@ -23,7 +23,7 @@
           </li>
         </ul>
         <ul class="navigator-list navigation-user">
-          <li class="navigation-item">
+          <li class="navigation-item-search">
             <a class="navigator-link" href="#">
               <span class="visually-hidden">
                 поиск
@@ -31,21 +31,21 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigator-link" href="#">
+            <a class="navigator-link favorit" href="#">
               <span class="visually-hidden">
                 избранное
               </span>
               </a>
           </li>
             </ul>
-            <a class="navigator-link button" href="catalog.html">ХОЧУ СЮДА!</a>
+            <a class="navigator-link button" href="catalog.html">хочу сюда!</a>
        </nav>
     </header>
     <main class="main-index">
       <section class="about">
         <h1 class="visually-hidden main-title">Город Седона</h1>
         <div class="welcome-block">
-          <img class="welcome-logo" src="images/welcome/welcome.svg" width="458px" height="352px" alt="приветствие">
+          <img class="welcome-logo" src="/images/icons/welcome.svg" width="458" height="352" alt="приветствие">
         </div>
       </section>
       <section class="advantage">
@@ -55,36 +55,36 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantage-list">
           <li class="advantage-list-item-img">
-            <h3 class="advantages-list-title">
+            <h3 class="advantages-title-list">
               Настоящий
               городок
             </h3>
               <p class="advantage-list-description">
                 Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
-              <img src="images/advantages/hotels-advantages.jpg" width="800px" height="384px" alt="фото городка с мотелями,кафе,сувенирными лавками, деревьями и горами на заднем плане.">
+              <img src="/images/hotels-advantages.jpg" width="800" height="384" alt="фото городка с мотелями,кафе,сувенирными лавками, деревьями и горами на заднем плане.">
               <ul class="advantage-city-list">
-                <li class="advantage-city-item">
-                  <h3 class="advantage-list-title">
+                <li class="advantage-item-city">
+                  <h3 class="advantage-title-list">
                     Жильё
                   </h3>
-                  <p class="advantage-city-description">
+                  <p class="advantage-description-city">
                     Рекомендуем пожить в настоящем мотеле, всё как в кино!
                   </p>
                 </li>
-                <li class="advantage-city-item">
+                <li class="advantage-item-city">
                   <h3 class="advantage-city-title">
                     Еда
                   </h3>
-                  <p class="advantage-city-description">
+                  <p class="advantage-description-city">
                     Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
                   </p>
                 </li>
-                <li class="advantage-city-item">
-                  <h3 class="advantage-city-title">
+                <li class="advantage-item-city">
+                  <h3 class="advantage-title-city">
                     Сувениры
                   </h3>
-                  <p class="advantage-city-description">
+                  <p class="advantage-description-city">
                     Не только китайского, но и настоящего местного производства!
                   </p>
                 </li>
@@ -94,7 +94,7 @@
             <h3 class="advantage-list-title">
               Там есть мост дьявола
             </h3>
-            <img src="images/advantages/bridge-mountains.jpg" width="800px" height="384px" alt="Остатки разрушевшейся скалы напоминают мостик, но внушает он не чувство надёжности, а скорее страх.">
+            <img src="/images/bridge-mountains.jpg" width="800" height="384" alt="Остатки разрушевшейся скалы напоминают мостик, но внушает он не чувство надёжности, а скорее страх.">
             <p class="advantage-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
@@ -141,10 +141,10 @@
         <form class="mailing-list-form" action="https://echo.htmlacademy.ru/">
           <h3 class="mailing-list-title">Подпишитесь на рассылку</h3>
           <p class="mailing-list-description">
-            Только полезная информация и никакого спама, честное бойскаутское!
+            Только полезная информация и никакого спама,<br> честное бойскаутское!
           </p>
-          <label><input type="email" placeholder="Ваш e-mail"></label>
-          <button type="submit" value="subscript">Подписаться</button>
+          <label><input class="subscript-field" type="email" placeholder="Ваш e-mail"></label>
+          <button class="button-subscript" type="submit" value="subscript">Подписаться</button>
         </form>
       </section>
     </main>
@@ -173,11 +173,11 @@
         <h3 class="visually-hidden">Контакты</h3>
         <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
-      <section class="footer-logo-htmlacademy">
-        <a class="button" href="https://htmlacademy.ru/">
+      <div class="footer-logo-htmlacademy">
+        <a class="button-footer-logo-htmlacademy" href="https://htmlacademy.ru/">
           <span class="visually-hidden">html academy</span>
         </a>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
