@@ -35,7 +35,6 @@ body {
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: url("/images/header/Rectangle\ 1.png");
   padding: 15px;
   padding-top: 9px;
   padding-bottom: 8px;
@@ -69,14 +68,14 @@ body {
 
 .navigation-item-search::after {
   content: "";
-  background-image: url("/images/header/Поиск.svg");
+  background-image: url("/images/icons/search.svg");
   width: 18px;
   height: 18px;
   position: absolute;
 }
 
 .navigator-link.favorit {
-  background-image: url("/images/header/favorite.svg");
+  background-image: url("/images/icons/favorite.svg");
   width: 18px;
   height: 17px;
   position: absolute;
@@ -86,7 +85,7 @@ body {
   width: 1200px;
   height: 485px;
   background-color: #ffffff;
-  background-image: url("../images/welcome/divider.svg"), url("../images/welcome/index-background.jpg");
+  background-image: url("/images/icons/divider.svg"), url("../images/index-background.jpg");
   background-size: 100% auto, 100% auto;
   background-repeat: no-repeat;
   background-position: bottom, top;
@@ -164,7 +163,7 @@ body {
 
 .mailing-list {
   background-color: #83b3d3;
-  background-image: url("../images/background-email.jpg");
+  background-image: url("/images/background-email.jpg");
   height: 411px;
   text-align: center;
   color: #ffffff;
@@ -200,13 +199,13 @@ body {
 
 
 .footer-logo-htmlacademy {
-  background-image: url("/images/footer/logo_htmlacademy.svg ");
+  background-image: url("/images/icons/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   width: 115px;
   height: 34px;
   margin-right: 72px;
   display: inline-block;
-  text-align: right;
+  margin-left: auto;
 }
 
 .catalog-body {
@@ -221,7 +220,7 @@ body {
 
 .inner-filter-section {
   background-color: #68a2ca;
-  background-image: url("../images/catalog/catalog-background\ 1.jpg");
+  background-image: url("/images/catalog/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -242,7 +241,7 @@ body {
 }
 
 .button-cards {
-  background-image: url("/images/catalog/mode-tile\ 1.svg");
+  background-image: url("/images/icons/tile.svg");
   background-position: center;
   width: 48px;
   height: 48px;
@@ -250,7 +249,7 @@ body {
 }
 
 .button-slide {
-  background-image: url("/images/catalog/mode-slideshow\ 1.svg");
+  background-image: url("/images/icons/slideshow.svg");
   background-position: center;
   width: 48px;
   height: 48px;
@@ -258,7 +257,7 @@ body {
 }
 
 .button-list {
-  background-image: url("/images/catalog/mode-list\ 1.svg");
+  background-image: url("/images/icons/list.svg");
   background-position: center;
   width: 48px;
   height: 48px;
@@ -282,7 +281,7 @@ body {
 
 
 .visually-hidden.four-stars {
-  background-image: url("/images/catalog/4stars.svg");
+  background-image: url("/images/icons/star.svg");
   width: 91px;
   height: 17px;
   display: inline-block;
@@ -327,15 +326,6 @@ body {
   text-align: center;
 }
 
-.pagination-showmore {
-  background-image: url("/images/catalog/pagination....svg");
-  width: 55px;
-  height: 55px;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
 
 .mailing-list-catalog {
   background-color: #ffffff;
