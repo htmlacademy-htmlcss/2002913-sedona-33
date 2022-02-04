@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url("//fonts/ptsans-700.woff2");
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -99,19 +99,13 @@ body {
   color: #000000;
 }
 
-.advantage h2 {
+.advantage-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
 }
 
-.advantage h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-}
 
 .advantage-list-description {
   font-weight: 400;
@@ -134,7 +128,7 @@ body {
   text-align: center;
 }
 
-.advantage-list-item-img {
+.advantage-img {
   background-color: #83b3d3;
   color: #ffffff;
   font-size: 24px;
