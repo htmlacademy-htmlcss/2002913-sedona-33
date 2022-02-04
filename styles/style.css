@@ -15,6 +15,11 @@
   font-display: swap;
 }
 
+
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -22,7 +27,10 @@ body {
   background-color: #f2f2f2;
   color: #000000;
   width: 1200px;
-  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .button {
@@ -51,7 +59,33 @@ body {
   color: #000000;
 }
 
-.navigator-link {
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.navigation-user {
+  max-width: 120px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-link {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -59,19 +93,22 @@ body {
   text-align: center;
   text-decoration: none;
   color: #000000;
+  display: block;
 }
 
-.navigator-link.button {
+.navigation-link.button {
   font-size: 16px;
   line-height: 20px;
+  width: 160px;
+  align-self: center;
 }
 
-.navigator-link.search {
+.navigation-link.search {
   background-image: url("/images/icons/search.svg");
   background-repeat: no-repeat;
 }
 
-.navigator-link.favorit {
+.navigation-link.favorit {
   background-image: url("/images/icons/favorite.svg");
   width: 18px;
   height: 17px;
