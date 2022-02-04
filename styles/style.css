@@ -3,13 +3,13 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -104,12 +104,12 @@ body {
 }
 
 .navigation-link.search {
-  background-image: url("/images/icons/search.svg");
+  background-image: url("../images/icons/search.svg");
   background-repeat: no-repeat;
 }
 
 .navigation-link.favorit {
-  background-image: url("/images/icons/favorite.svg");
+  background-image: url("../images/icons/favorite.svg");
   width: 18px;
   height: 17px;
   position: absolute;
@@ -120,7 +120,7 @@ body {
   width: 1200px;
   height: 485px;
   background-color: #ffffff;
-  background-image: url("/images/icons/divider.svg"), url("../images/index-background.jpg");
+  background-image: url("../images/icons/divider.svg"), url("../images/index-background.jpg");
   background-size: 100% auto, 100% auto;
   background-repeat: no-repeat;
   background-position: bottom, top;
@@ -192,7 +192,7 @@ body {
 
 .mailing-list {
   background-color: #83b3d3;
-  background-image: url("/images/background-email.jpg");
+  background-image: url("../images/background-email.jpg");
   height: 411px;
   text-align: center;
   color: #ffffff;
@@ -228,7 +228,7 @@ body {
 
 
 .footer-logo-htmlacademy {
-  background-image: url("/images/icons/logo-htmlacademy.svg");
+  background-image: url("../images/icons/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   width: 115px;
   height: 34px;
@@ -239,17 +239,17 @@ body {
 
 
 .footer-social-item.twitter {
-  background-image: url("/images/icons/social-twitter.svg");
+  background-image: url("../images/icons/social-twitter.svg");
   background-repeat: no-repeat;
 }
 
 .footer-social-item.facebook {
-  background-image: url("/images/icons/social-facebook.svg");
+  background-image: url("../images/icons/social-facebook.svg");
   background-repeat: no-repeat;
 }
 
 .footer-social-item.youtube {
-  background-image: url("/images/icons/social-youtube.svg");
+  background-image: url("../images/icons/social-youtube.svg");
   background-repeat: no-repeat;
 }
 
@@ -266,7 +266,7 @@ body {
 
 .inner-filter-section {
   background-color: #68a2ca;
-  background-image: url("/images/catalog/catalog-background.jpg");
+  background-image: url("../images/catalog/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -287,7 +287,7 @@ body {
 }
 
 .button-cards {
-  background-image: url("/images/icons/tile.svg");
+  background-image: url("../images/icons/tile.svg");
   background-position: center;
   width: 48px;
   height: 48px;
@@ -295,7 +295,7 @@ body {
 }
 
 .button-slide {
-  background-image: url("/images/icons/slideshow.svg");
+  background-image: url("../images/icons/slideshow.svg");
   background-position: center;
   width: 48px;
   height: 48px;
@@ -303,7 +303,7 @@ body {
 }
 
 .button-list {
-  background-image: url("/images/icons/list.svg");
+  background-image: url("../images/icons/list.svg");
   background-position: center;
   width: 48px;
   height: 48px;
@@ -327,7 +327,7 @@ body {
 
 
 .visually-hidden.four-stars {
-  background-image: url("/images/icons/star.svg");
+  background-image: url("../images/icons/star.svg");
   width: 91px;
   height: 17px;
   display: inline-block;
