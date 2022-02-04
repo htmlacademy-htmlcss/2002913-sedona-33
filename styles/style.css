@@ -31,6 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  min-height: 100%;
 }
 
 .button {
@@ -74,6 +75,7 @@ body {
   width: 450px;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 
@@ -104,6 +106,9 @@ body {
 
 .navigation-link.search {
   background-image: url("../images/icons/search.svg");
+  width: 18px;
+  height: 18px;
+  position: absolute;
   background-repeat: no-repeat;
 }
 
@@ -127,13 +132,32 @@ body {
 }
 
 .welcome-logo {
-  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .advantage {
   background-color: #ffffff;
   color: #000000;
 }
+
+
+.advantage-list {
+  margin: 0;
+  padding: 0;
+}
+
+
+.advantage-img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.advantage-city-list {
+  display: flex;
+}
+
 
 .advantage-title {
   font-weight: 700;
@@ -174,6 +198,11 @@ body {
 .hotel-search {
   text-align: center;
   background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .hotel-search-quwstion {
@@ -187,6 +216,10 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.button.search-hotel {
+  width: 575px;
 }
 
 .mailing-list {
