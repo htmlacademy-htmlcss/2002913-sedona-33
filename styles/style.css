@@ -74,7 +74,6 @@ body {
   width: 450px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 
