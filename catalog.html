@@ -8,40 +8,40 @@
   <body class="catalog-body">
     <header>
       <nav class="navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="/images/icons/logo.svg" width="139" height="70" alt="Логотип Седона">
+        <a class="main-header-logo" href="#">
+          <img class="logo" src="/images/icons/logo.svg" alt="Логотип Седона" width="139" height="70">
         </a>
-        <ul class="navigator-list">
+        <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigator-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigator-link" href="#">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigator-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigator-list navigation-user">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigator-link search" href="#">
+            <a class="navigation-link search" href="#">
               <span class="visually-hidden">
                 поиск
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigator-link" href="#">
+            <a class="navigation-link favorit" href="#">
               <span class="visually-hidden">
                 избранное
               </span>
               </a>
           </li>
             </ul>
-            <a class="navigator-link button navigation-link-current" href="catalog.html">хочу сюда!</a>
+            <a class="navigation-link button" href="catalog.html">хочу сюда!</a>
        </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
       <section class="inner-filter-section">
       <header class="inner-header">
         <h1 class="inner-header-title">
@@ -59,7 +59,7 @@
         </ul>
       </header>
         <h2 class="visually-hidden">список гостиниц с фильтрами</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="catalog-filter filter-container" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
@@ -116,8 +116,10 @@
             </label>
             <div class="slider"></div>
           </fieldset>
+          <fieldset class="catalog-filter-button">
           <button class="button-filter" type="submit">применить</button>
           <button class="button-filter" type="reset">сбросить</button>
+         </fieldset>
         </form>
       </section>
     <div class="filter-catalog">
@@ -138,6 +140,7 @@
           </ul>
         </details>
         </form>
+        <div class="show-card-button">
         <button class="button-cards" type="button">
           <span class="visually-hidden">Показать карточки</span>
         </button>
@@ -147,6 +150,7 @@
         <button class="button-list">
           <span class="visually-hidden">Показать список</span>
         </button>
+      </div>
     </div>
     <div class="catalog-hotel-list"></div>
       <ul class="hotel-list">
@@ -222,6 +226,7 @@
       <div class="button-more">
       <a class="hotel-showmore-button" href="">Загрузить ещё</a>
       </div>
+      <div class="pagination-container">
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link" href="#">1</a>
@@ -249,18 +254,21 @@
         <option value="6">6</option>
       </select>
     </label>
+    </div>
       <section class="mailing-list-catalog">
         <form class="mailing-list-form" action="https://echo.htmlacademy.ru/">
           <h3 class="mailing-list-title">Подпишитесь на рассылку</h3>
           <p class="mailing-list-description">
             Только полезная информация и никакого спама,<br>честное бойскаутское!
           </p>
-          <label><input class="subscript-field" type="email" placeholder="Ваш e-mail"></label>
-          <button class="button-subscript" type="submit" value="subscript">Подписаться</button>
+          <div class="input-email-wrap">
+            <label><input class="subscript-field" type="email" placeholder="Ваш e-mail"></label>
+            <button class="button-subscript" type="submit" value="subscript">Подписаться</button>
+          </div>
         </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="main-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
@@ -291,6 +299,5 @@
         </a>
       </div>
     </footer>
-
   </body>
 </html>
