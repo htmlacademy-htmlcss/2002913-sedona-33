@@ -87,7 +87,6 @@ body {
 
 .navigation-list {
   margin: 0;
-  padding: 0;
   list-style-type: none;
   display: flex;
   padding: 20px 17px;
@@ -152,9 +151,11 @@ body {
 .about {
   width: 1200px;
   margin-top: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
   background-color: #ffffff;
   background-image: url("../images/icons/divider.svg"), url("../images/index-background.jpg");
-  background-size: 100% auto, 100% auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: bottom, top;
   text-align: center;
