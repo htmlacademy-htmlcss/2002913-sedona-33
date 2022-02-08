@@ -169,12 +169,14 @@ body {
 .advantage {
   background-color: #ffffff;
   color: #000000;
+  margin-top: 0;
+  padding-top: 63px;
 }
 
 
 .advantage-list {
   margin: 0;
-  padding: 0;
+  padding-top: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -197,9 +199,12 @@ body {
 
 
 .advantage-title {
+  margin: 0 auto;
+  margin-bottom: 31px;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -209,6 +214,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .advantage-description {
@@ -216,6 +222,8 @@ body {
   font-size: 22px;
   line-height: 36px;
   text-align: center;
+  margin: o auto;
+  margin-bottom: 81px;
 }
 
 .advantage-description-city {
