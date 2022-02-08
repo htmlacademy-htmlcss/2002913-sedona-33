@@ -276,9 +276,10 @@ body {
 .mailing-list {
   background-color: #83b3d3;
   background-image: url("../images/background-email.jpg");
-  height: 411px;
+  background-repeat: no-repeat;
   text-align: center;
   color: #ffffff;
+  padding-top: 94px;
 }
 
 .mailing-list-form {
@@ -295,6 +296,22 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+
+.mailing-list-description {
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+
+.input-email-wrap {
+  display: flex;
+  justify-content: stretch;
+  width: 800px;
+  margin-bottom: 94px;
 }
 
 .button-subscript {
@@ -303,11 +320,18 @@ body {
   text-transform: uppercase;
   text-align: center;
   background-color: #83b3d3;
+  margin: 0;
+  color: #ffffff;
+  width: 200;
+  border-radius: 4px;
 }
 
 .subscript-field {
   font-size: 20px;
   line-height: 26px;
+  padding: 16px;
+  border-radius: 4px;
+  width: 600px;
 }
 
 .footer-contacts-phone {
@@ -323,6 +347,7 @@ body {
 .main-footer {
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 
 
