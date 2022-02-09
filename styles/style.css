@@ -526,7 +526,6 @@ body {
 
 .button-cards {
   padding: 0;
-  margin: 0;
   width: 17px;
   height: 16px;
   margin: 16px;
@@ -660,9 +659,6 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.pagination-item {
 }
 
 
