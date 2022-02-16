@@ -74,7 +74,7 @@ body {
 .main-header-logo {
   display: flex;
   margin: 0;
-  margin-right: 30px;
+  margin-right: 47px;
   position: relative;
 }
 
@@ -83,32 +83,33 @@ body {
   display: flex;
   width: 1060px;
   margin: 0;
+  padding-right: 10px;
 }
 
 
 .navigation-list {
   margin: 0;
+  padding-left: 0;
   list-style-type: none;
   display: flex;
-  padding: 20px 17px;
+  padding-top: 20px;
   min-width: 420px;
   flex-wrap: wrap;
 }
 
 
-.navigation-item:not(:last-child) {
+.navigation-item:not(:nth-child(3n)) {
   margin-right: 34px;
 }
 
 
 .navigation-user {
+  padding-top: 14px;
   margin: 0;
   min-width: 280px;
   display: flex;
   margin-left: auto;
   list-style-type: none;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .navigation-link {
@@ -127,8 +128,8 @@ body {
   line-height: 20px;
   width: 160px;
   align-self: center;
-  margin-left: 20px;
-  padding: 8px 0;
+  min-width: 160px;
+  color: #ffffff;
 }
 
 .navigation-link.search {
@@ -136,8 +137,8 @@ body {
   min-width: 18px;
   min-height: 18px;
   background-repeat: no-repeat;
-  display: block;
-  margin: 24px 12px;
+  margin-right: 23px;
+  margin-top: 10px;
 }
 
 .navigation-link.favorit {
@@ -146,7 +147,8 @@ body {
   min-height: 18px;
   background-repeat: no-repeat;
   display: block;
-  margin: 24px 12px;
+  margin-right: 32px;
+  margin-top: 10px;
 }
 
 .about {
@@ -178,27 +180,34 @@ body {
 
 .advantage-list {
   margin: 0;
-  padding-top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
 }
 
 
 .advantage-img {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   background-color: #83b3d3;
   color: #ffffff;
   font-size: 24px;
   line-height: 28px;
   list-style-type: none;
+  grid-column: 1/ -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.hotels-advantages {
+  grid-column: 2/-1;
 }
 
 .advantage-city-list {
-  display: flex;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
 }
 
