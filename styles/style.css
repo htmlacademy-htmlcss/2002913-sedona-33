@@ -204,11 +204,17 @@ body {
   grid-column: 2/-1;
 }
 
+
+.bridge-advantage {
+  grid-column: 2/-1;
+}
+
 .advantage-city-list {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
+  grid-column: 1/-1;
 }
 
 
