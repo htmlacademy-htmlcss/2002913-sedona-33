@@ -428,6 +428,11 @@ body {
 }
 
 
+.button-social {
+  display: block;
+}
+
+
 .catalog-body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -613,6 +618,7 @@ body {
 
 .hotel-card-image {
   order: -2;
+  object-fit: cover;
 }
 
 
