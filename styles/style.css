@@ -422,24 +422,27 @@ body {
 
 
 .twitter::before {
-  content: url("../images/icons/social-twitter.svg");
+  content: "";
   display: block;
+  background-image: url("../images/icons/social-twitter.svg");
   width: 18px;
-  height: 15;
+  height: 15px;
 }
 
 
 .facebook::before {
-  content: url("../images/icons/social-facebook.svg");
+  content: "";
   display: block;
+  background-image: url("../images/icons/social-facebook.svg");
   width: 10px;
   height: 18px;
 }
 
 
 .youtube::before {
-  content: url("../images/icons/social-youtube.svg");
+  content: "";
   display: block;
+  background-image: url("../images/icons/social-youtube.svg");
   width: 20px;
   height: 16px;
 }
