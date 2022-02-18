@@ -389,6 +389,16 @@ body {
   margin: 0;
 }
 
+.footer-social-item {
+  width: 20px;
+  margin-right: 30px;
+}
+
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 
 .footer-logo-htmlacademy {
   background-image: url("../images/icons/logo-htmlacademy.svg");
@@ -399,37 +409,39 @@ body {
 }
 
 
-.footer-social-item {
-  width: 18px;
-  height: 18px;
+.button-social {
   background-repeat: no-repeat;
   margin-right: 30px;
   margin-bottom: 20px;
 }
 
 
-.footer-social-item:nth-child(3n) {
+.button-social:nth-child(3n) {
   margin-right: 0;
 }
 
 
-.twitter {
-  background-image: url("../images/icons/social-twitter.svg");
-}
-
-
-.facebook {
-  background-image: url("../images/icons/social-facebook.svg");
-}
-
-
-.youtube {
-  background-image: url("../images/icons/social-youtube.svg");
-}
-
-
-.button-social {
+.twitter::before {
+  content: url("../images/icons/social-twitter.svg");
   display: block;
+  width: 18px;
+  height: 15;
+}
+
+
+.facebook::before {
+  content: url("../images/icons/social-facebook.svg");
+  display: block;
+  width: 10px;
+  height: 18px;
+}
+
+
+.youtube::before {
+  content: url("../images/icons/social-youtube.svg");
+  display: block;
+  width: 20px;
+  height: 16px;
 }
 
 
