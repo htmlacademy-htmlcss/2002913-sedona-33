@@ -6,7 +6,7 @@
 
 ---
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
+_Не удаляйте и не обращайте внимание на файлы:_ 
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
 ---

@@ -40,21 +40,43 @@ body {
 }
 
 
-.button {
-  font-family: inherit;
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
+.button-dark {
   text-align: center;
   color: #ffffff;
   background-color: #756257;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 15px;
-  padding-top: 9px;
-  padding-bottom: 8px;
   border-radius: 4px;
+  display: inline-block;
+  padding: 9px 15px;
 }
+
+
+.button-light {
+  color: #ffffff;
+  background-color: #83b3d3;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 9px 15px;
+}
+
+.button-small {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+.button-large {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 
 .visually-hidden {
   position: fixed;
@@ -123,13 +145,14 @@ body {
   display: block;
 }
 
-.navigation-link.button {
+.navigation-link.button-dark {
   font-size: 16px;
   line-height: 20px;
   width: 160px;
   align-self: center;
   min-width: 160px;
   color: #ffffff;
+  display: inline-block;
 }
 
 .navigation-link.search {
@@ -201,7 +224,7 @@ body {
 
 
 .advantage-first-wrap {
-  padding-top: 97px;
+  padding: 97px 90px 87px;
 }
 
 
@@ -232,8 +255,6 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 30px;
-  padding: 0  80px;
 }
 
 
@@ -243,7 +264,12 @@ body {
   line-height: 21px;
   text-align: center;
   margin: 0 auto;
-  list-style-type: none;
+  width: 220px;
+}
+
+
+.advantage-description.number {
+  margin: 30px auto;
 }
 
 .advantage-description {
@@ -252,6 +278,7 @@ body {
   line-height: 36px;
   text-align: center;
   margin: 0;
+  margin-bottom: 80px;
 }
 
 .advantage-description-city {
@@ -347,6 +374,7 @@ body {
   color: #ffffff;
   width: 200px;
   border-radius: 4px;
+  display: inline-block;
 }
 
 .subscript-field {
@@ -354,7 +382,6 @@ body {
   line-height: 26px;
   padding: 16px;
   border-radius: 4px;
-  width: 600px;
 }
 
 .footer-contacts-phone {
