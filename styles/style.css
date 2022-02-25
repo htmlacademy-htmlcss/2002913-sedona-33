@@ -211,20 +211,42 @@ body {
 }
 
 
+.advantage-text {
+  padding: 98px 75px 108px;
+}
+
+
+.advantage-list-item {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+
+.advantage-list-item:nth-child(2n+1) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+
+.advantage-list-title.advantage-text {
+  padding: 0 50px;
+}
+
+
 .advantage-img {
   background-color: #83b3d3;
   color: #ffffff;
   font-size: 24px;
   line-height: 28px;
   list-style-type: none;
-  grid-column: 1/ -1;
   display: grid;
+  grid-column: 1/-1;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 
-.advantage-first-wrap {
+.advantage-first-wrap,
+.advantage-second-wrap {
   padding: 97px 90px 87px;
+  background: #83b3d3;
 }
 
 
@@ -235,8 +257,19 @@ body {
 
 
 .bridge-advantage {
-  grid-column: 2/-1;
+  grid-column: 1/3;
+  grid-row: 1/2;
   display: block;
+}
+
+
+.advantage-first-wrap {
+  grid-column: 1/2;
+}
+
+.advantage-second-wrap {
+  grid-column: 3/-1;
+  grid-row: 1/2;
 }
 
 .advantage-city-list {
@@ -245,6 +278,8 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
   grid-column: 1/-1;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 
@@ -270,17 +305,58 @@ body {
 }
 
 
+.house::before {
+  content: " ";
+  display: block;
+  width: 75px;
+  height: 72px;
+  background-image: url("../images/icons/house.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 89px;
+  transform: translateX(-50%);
+}
+
+
+.food::before {
+  content: " ";
+  display: block;
+  width: 74px;
+  height: 70px;
+  background-image: url("../images/icons/burger.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 89px;
+  transform: translateX(-50%);
+}
+
+
+.souvenirs::before {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 76px;
+  background-image: url("../images//icons/souvenirs.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 89px;
+  transform: translateX(-50%);
+}
+
+
 .advantage-list-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   margin: 0 auto;
-  width: 220px;
 }
 
 
-.advantage-description.number {
+.advantage-list-description.number {
   margin: 30px auto;
 }
 
@@ -293,11 +369,24 @@ body {
   margin-bottom: 80px;
 }
 
+
+.advantage-item-city {
+  position: relative;
+  padding: 184px 110px 79px;
+  background-color: #ffffff;
+}
+
+
+.advantage-item-city:nth-child(2n+1) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 .advantage-description-city {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin: 20px 0;
 }
 
 
@@ -759,6 +848,5 @@ body {
   height: 411px;
   text-align: center;
   padding-top: 73px;
-}
 }
 
