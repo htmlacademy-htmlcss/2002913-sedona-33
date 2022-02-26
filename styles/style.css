@@ -42,12 +42,11 @@ body {
 
 .icon::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 20px;
   height: 20px;
   background-color: #000000;
   mask: var(--icon) no-repeat center / cover;
-  transition: 0.1s;
 }
 
 
@@ -638,6 +637,7 @@ body {
   padding-top: 40px;
   padding-bottom: 30px;
   padding-left: 72px;
+  padding-right: 72px;
 }
 
 
@@ -669,8 +669,7 @@ body {
   height: 34px;
   background-color: #000000;
   mask: var(--icon) no-repeat center / cover;
-  transition: 0.1s;
-  margin-right: 72px;
+  margin: 18px 22px;
 }
 
 
@@ -679,13 +678,13 @@ body {
 }
 
 
-.footer-logo-htmlacademy:focus::before {
-  background: #756257;
+.footer-logo-htmlacademy:focus-visible {
+  display: block;
   outline: 3px solid #83b3d3;
-  box-sizing: border-box;
   border-radius: 10px;
+  width: 160px;
+  height: 70px;
 }
-
 
 .footer-logo-htmlacademy:active::before {
   opacity: 30%;
@@ -693,6 +692,8 @@ body {
 
 .footer-logo-htmlacademy {
   --icon: url("../images/icons/logo-htmlacademy.svg");
+  width: 160px;
+  height: 70px;
 }
 
 
@@ -712,12 +713,11 @@ body {
 
 .button-social::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 20px;
   height: 20px;
   background-color: #83b3d3;
   mask: var(--icon) no-repeat center / cover;
-  transition: 0.1s;
   box-sizing: border-box;
 }
 
@@ -727,9 +727,13 @@ body {
 }
 
 
-.button-social:focus::before {
-  border-radius: 10px;
-  border: 3px solid #83b3d3;
+.button-social:focus-visible {
+  display: block;
+  border: 0;
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
 }
 
 
