@@ -40,21 +40,60 @@ body {
 }
 
 
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #000000;
+	mask: var(--icon) no-repeat center / cover;
+	transition: 0.1s;
+}
+
+
+.icon--svg-search {
+  --icon: url("../images/icons/search.svg");
+}
+
+
+.icon--svg-heart {
+  --icon: url("../images/icons/heart.svg");
+}
+
+
 .button-dark {
   text-align: center;
   color: #ffffff;
   background-color: #756257;
+  border: none;
   border-radius: 4px;
   display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
   padding: 9px 15px;
+}
+
+
+.button-dark:hover {
+  background: #615048;
+  border-radius: 4px;
+}
+
+
+.button-dark:focus {
+  background: #615048;
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
 }
 
 
 .button-light {
   color: #ffffff;
   background-color: #83b3d3;
+  border: none;
   border-radius: 4px;
   display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
   padding: 9px 15px;
 }
 
@@ -96,7 +135,7 @@ body {
 .main-header-logo {
   display: flex;
   margin: 0;
-  margin-right: 47px;
+  margin-right: 30px;
   position: relative;
 }
 
@@ -105,34 +144,18 @@ body {
   display: flex;
   width: 1060px;
   margin: 0;
-  padding-right: 10px;
 }
 
 
 .navigation-list {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
   list-style-type: none;
   display: flex;
-  padding-top: 20px;
   min-width: 420px;
   flex-wrap: wrap;
 }
 
-
-.navigation-item:not(:nth-child(3n)) {
-  margin-right: 34px;
-}
-
-
-.navigation-user {
-  padding-top: 14px;
-  margin: 0;
-  min-width: 280px;
-  display: flex;
-  margin-left: auto;
-  list-style-type: none;
-}
 
 .navigation-link {
   font-family: "PT Sans", sans-serif;
@@ -142,36 +165,66 @@ body {
   text-align: center;
   text-decoration: none;
   color: #000000;
+  position: relative;
   display: block;
+  padding: 20px 17px;
 }
 
-.navigation-link.button-dark {
+
+.navigation-link:hover {
+  color: #756257;
+}
+
+
+.navigation-link:focus {
+  font-weight: bold;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
+
+.navigation-user {
+  min-width: 280px;
+  margin-left: auto;
+  margin-top: 13px;
+  justify-content: end;
+}
+
+
+.navigation-button {
   width: 160px;
-  align-self: center;
-  min-width: 160px;
-  color: #ffffff;
-  display: inline-block;
 }
 
-.navigation-link.search {
-  background-image: url("../images/icons/search.svg");
-  min-width: 18px;
-  min-height: 18px;
-  background-repeat: no-repeat;
-  margin-right: 23px;
-  margin-top: 10px;
-}
 
-.navigation-link.favorit {
-  background-image: url("../images/icons/favorite.svg");
-  min-width: 18px;
-  min-height: 18px;
-  background-repeat: no-repeat;
+.user-link::before {
+  content: "";
   display: block;
-  margin-right: 32px;
-  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: #000000;
+}
+
+
+.search::before {
+  mask-image: url("../images/icons/search.svg");
+}
+
+.user-link.favorit::before {
+  mask-image: url("../images/icons/heart.svg");
 }
 
 .about {
@@ -556,11 +609,11 @@ body {
 .twitter::before {
   content: "";
   display: block;
-  background-image: url("../images/icons/social-twitter.svg");
+  background-image: url("../images/icons/tw.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 18px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   margin-top: 7px;
 }
 
@@ -568,9 +621,9 @@ body {
 .facebook::before {
   content: "";
   display: block;
-  background-image: url("../images/icons/social-facebook.svg");
-  width: 10px;
-  height: 18px;
+  background-image: url("../images/icons/fb.svg");
+  width: 20px;
+  height: 20px;
   margin-top: 7px;
 }
 
@@ -578,9 +631,9 @@ body {
 .youtube::before {
   content: "";
   display: block;
-  background-image: url("../images/icons/social-youtube.svg");
+  background-image: url("../images/icons/yt.svg");
   width: 20px;
-  height: 16px;
+  height: 20px;
   margin-top: 7px;
 }
 
