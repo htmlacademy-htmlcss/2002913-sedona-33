@@ -51,8 +51,13 @@ body {
 }
 
 
-.icon:hover {
+.icon:hover::before {
   background: #756257;
+}
+
+
+.icon:active::before {
+  opacity: 30%;
 }
 
 
@@ -93,7 +98,7 @@ body {
 
 .button-dark:focus {
   background: #615048;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
 
@@ -194,6 +199,10 @@ body {
   color: #756257;
 }
 
+
+.navigation-link:active {
+  opacity: 30%;
+}
 
 .navigation-link-current::before {
   position: absolute;
@@ -481,6 +490,24 @@ body {
   cursor: pointer;
 }
 
+
+.button-search-hotel:hover {
+  background: #615048;
+}
+
+
+.button-search-hotel:focus {
+  background: #615048;
+  outline: 3px solid #83b3d3;
+}
+
+
+.button-search-hotel:active {
+  background: #615048;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+}
+
 .mailing-list {
   background-color: #83b3d3;
   background-image: url("../images/background-email.jpg");
@@ -513,7 +540,7 @@ body {
 }
 
 
-.button-subscript.button-large.button-light {
+.button-subscript {
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
@@ -527,28 +554,85 @@ body {
   border-radius: 0 10px 10px 0;
 }
 
+
+.button-subscript:hover {
+  background: #68a2ca;
+}
+
+
+.button-subscript:focus {
+  background: #68a2ca;
+  outline: 3px solid #756257;
+}
+
+
+.button-subscript:active {
+  background: #68a2ca;
+  opacity: 30%;
+}
+
 .subscript-field {
   font-size: 20px;
   line-height: 26px;
   padding: 16px;
   border: 0;
   border-radius: 10px 0 0 10px;
+  background: #f2f2f2;
   width: 564px;
 }
 
+
+.subscript-field:hover {
+  background: #e6e6e6;
+}
+
+
+.subscript-field:focus {
+  background: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+
+.subscript-field:invalid {
+  outline: 2px solid #ff5757;
+  background: #ffffff;
+}
+
+
 .footer-contacts-phone {
+  display: inline-block;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   text-align: center;
   color: #000000;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+
+.footer-contacts-phone:hover {
+  color: #756257;
+}
+
+
+.footer-contacts-phone:focus {
+  color: #756257;
+  outline: 3px solid #83b3d3;
+  border-radius: 10px;
+}
+
+
+.footer-contacts-phone:active {
+  opacity: 30%;
 }
 
 
 .main-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #ffffff;
   margin-bottom: 0;
   padding-top: 40px;
@@ -567,8 +651,9 @@ body {
 }
 
 .footer-social-item {
-  width: 20px;
-  margin-right: 30px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 
@@ -577,17 +662,44 @@ body {
 }
 
 
-.footer-logo-htmlacademy {
-  background-image: url("../images/icons/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
+.footer-logo-htmlacademy::before {
+  content: "";
+  display: block;
   width: 115px;
   height: 34px;
+  background-color: #000000;
+  mask: var(--icon) no-repeat center / cover;
+  transition: 0.1s;
   margin-right: 72px;
+}
+
+
+.footer-logo-htmlacademy:hover::before {
+  background: #756257;
+}
+
+
+.footer-logo-htmlacademy:focus::before {
+  background: #756257;
+  outline: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+.footer-logo-htmlacademy:active::before {
+  opacity: 30%;
+}
+
+.footer-logo-htmlacademy {
+  --icon: url("../images/icons/logo-htmlacademy.svg");
 }
 
 
 .button-social {
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
   margin-right: 30px;
   margin-bottom: 20px;
 }
@@ -598,35 +710,46 @@ body {
 }
 
 
-.twitter::before {
+.button-social::before {
   content: "";
-  display: block;
-  background-image: url("../images/icons/tw.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  display: inline-block;
   width: 20px;
   height: 20px;
-  margin-top: 7px;
+  background-color: #83b3d3;
+  mask: var(--icon) no-repeat center / cover;
+  transition: 0.1s;
+  box-sizing: border-box;
 }
 
 
-.facebook::before {
-  content: "";
-  display: block;
-  background-image: url("../images/icons/fb.svg");
-  width: 20px;
-  height: 20px;
-  margin-top: 7px;
+.button-social:hover::before {
+  background: #68a2ca;
 }
 
 
-.youtube::before {
-  content: "";
-  display: block;
-  background-image: url("../images/icons/yt.svg");
-  width: 20px;
-  height: 20px;
-  margin-top: 7px;
+.button-social:focus::before {
+  border-radius: 10px;
+  border: 3px solid #83b3d3;
+}
+
+
+.button-social:active::before {
+  opacity: 30%;
+}
+
+
+.twitter {
+  --icon: url("../images/icons/tw.svg");
+}
+
+
+.facebook {
+  --icon: url("../images/icons/fb.svg");
+}
+
+
+.youtube {
+  --icon: url("../images/icons/yt.svg");
 }
 
 
