@@ -40,23 +40,35 @@ body {
 }
 
 
-.icon {
+.icon::before {
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: #000000;
-	mask: var(--icon) no-repeat center / cover;
-	transition: 0.1s;
+  background-color: #000000;
+  mask: var(--icon) no-repeat center / cover;
+  transition: 0.1s;
 }
 
 
-.icon--svg-search {
+.icon:hover {
+  background: #756257;
+}
+
+
+.search {
   --icon: url("../images/icons/search.svg");
 }
 
 
-.icon--svg-heart {
+.heart {
   --icon: url("../images/icons/heart.svg");
+}
+
+
+.navigation-user-item {
+  width: 42px;
+  padding-top: 7px;
 }
 
 
@@ -83,6 +95,13 @@ body {
   background: #615048;
   border: 3px solid #83b3d3;
   border-radius: 4px;
+}
+
+
+.button-dark:active {
+  background: #615048;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
 }
 
 
@@ -176,14 +195,6 @@ body {
 }
 
 
-.navigation-link:focus {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  text-transform: uppercase;
-}
-
-
 .navigation-link-current::before {
   position: absolute;
   right: 20px;
@@ -204,28 +215,9 @@ body {
 
 .navigation-button {
   width: 160px;
+  margin-left: 10px;
 }
 
-
-.user-link::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  mask-size: contain;
-  mask-position: center;
-  mask-repeat: no-repeat;
-  background-color: #000000;
-}
-
-
-.search::before {
-  mask-image: url("../images/icons/search.svg");
-}
-
-.user-link.favorit::before {
-  mask-image: url("../images/icons/heart.svg");
-}
 
 .about {
   width: 1200px;
