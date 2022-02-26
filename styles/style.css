@@ -398,8 +398,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding-top: 90px;
-  padding-bottom: 93px;
+  padding: 90px 240px 93px;
 }
 
 .hotel-search-quwstion {
@@ -479,6 +478,7 @@ body {
   color: #ffffff;
   width: 200px;
   display: inline-block;
+  border: 0;
   border-radius: 0 10px 10px 0;
 }
 
@@ -486,6 +486,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   padding: 16px;
+  border: 0;
   border-radius: 10px 0 0 10px;
   width: 564px;
 }
@@ -503,7 +504,7 @@ body {
 .main-footer {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  background-color: #ffffff;
   margin-bottom: 0;
   padding-top: 40px;
   padding-bottom: 30px;
@@ -515,7 +516,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   min-width: 110px;
-  justify-content: flex-start;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -557,8 +557,11 @@ body {
   content: "";
   display: block;
   background-image: url("../images/icons/social-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   width: 18px;
   height: 15px;
+  margin-top: 7px;
 }
 
 
@@ -568,6 +571,7 @@ body {
   background-image: url("../images/icons/social-facebook.svg");
   width: 10px;
   height: 18px;
+  margin-top: 7px;
 }
 
 
@@ -577,6 +581,7 @@ body {
   background-image: url("../images/icons/social-youtube.svg");
   width: 20px;
   height: 16px;
+  margin-top: 7px;
 }
 
 
