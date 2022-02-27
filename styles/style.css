@@ -70,9 +70,35 @@ body {
 }
 
 
+.favotite-green {
+  position: inline-block;
+  position: absolute;
+  background: #7db550;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.1em;
+  top: 0;
+  right: 0;
+  transform: translateX(-40%);
+}
+
+
+.favotite-green:active {
+  opacity: 30%;
+}
+
+
 .navigation-user-item {
   width: 42px;
   padding-top: 7px;
+  position: relative;
 }
 
 
