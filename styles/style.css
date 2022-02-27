@@ -903,10 +903,11 @@ body {
 }
 
 .button-cards {
-  padding: 0;
-  width: 17px;
-  height: 16px;
-  margin: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
 }
 
 
@@ -914,19 +915,39 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+
+.show-card-item {
+  width: 40px;
+  height: 40px;
 }
 
 
 .cards {
   background-image: url("../images/icons/tile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  width: 16px;
+  height: 14px;
 }
 
 .slide {
   background-image: url("../images/icons/slideshow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  width: 16px;
+  height: 14px;
 }
 
 .list {
   background-image: url("../images/icons/list.svg");
+  border: none;
+  width: 16px;
+  height: 14px;
 }
 
 .filter-catalog-title {

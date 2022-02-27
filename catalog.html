@@ -8,38 +8,37 @@
   <body class="catalog-body">
     <header class="main-header">
       <nav class="navigation">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo" href="#">
           <img class="logo" src="/images/icons/logo.svg" alt="Логотип Седона" width="139" height="70">
         </a>
-        <ul class="navigation-list ">
+        <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-user">
-          <li class="user-item">
-            <a class="navigation-link search" href="#">
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-user-item">
+            <a class="user-link icon search" href="#">
               <span class="visually-hidden">
                 поиск
               </span>
             </a>
           </li>
-          <li class="user-item">
-            <a class="navigation-link favorit" href="#">
+          <li class="navigation-user-item">
+            <a class="user-link icon heart" href="#">
               <span class="visually-hidden">
                 избранное
               </span>
+              <span class="favotite-green">12</span>
               </a>
           </li>
-          <li class="user-item">
-            <a class="navigation-link button" href="catalog.html">хочу сюда!</a>
-          </li>
+          <li><a class="button-dark button-small navigation-button" href="catalog.html">хочу сюда!</a></li>
             </ul>
        </nav>
     </header>
@@ -142,17 +141,23 @@
           </ul>
         </details>
         </form>
-        <div class="show-card-button">
-        <button class="button-cards cards" type="button">
-          <span class="visually-hidden">Показать карточки</span>
-        </button>
-        <button class="button-cards slide" type="button">
-          <span class="visually-hidden">Показать слайды</span>
-        </button>
-        <button class="button-cards list" type="button">
-          <span class="visually-hidden">Показать список</span>
-        </button>
-      </div>
+        <ul class="show-card-button">
+          <li class="show-card-item">
+             <button class="button-cards cards" type="button">
+               <span class="visually-hidden">Показать карточки</span>
+             </button>
+          </li>
+          <li class="show-card-item">
+            <button class="button-cards slide" type="button">
+              <span class="visually-hidden">Показать слайды</span>
+            </button>
+          </li>
+          <li class="show-card-item">
+            <button class="button-cards list" type="button">
+              <span class="visually-hidden">Показать список</span>
+            </button>
+         </li>
+      </ul>
     </div>
     <div class="catalog-hotel-list">
       <ul class="hotel-list">
