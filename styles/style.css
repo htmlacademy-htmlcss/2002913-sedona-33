@@ -808,27 +808,19 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  justify-content: flex-start;
 }
 
 
 .breadcrumbs-items {
-  position: relative;
   list-style-type: none;
-  margin: 0;
+  margin-right: 0;
   padding: 0;
-}
-
-
-.breadcrumbs-link.back {
-  width: 22px;
-  height: 21px;
+  display: flex;
+  align-items: center;
 }
 
 
 .breadcrumbs-link.hotels {
-  width: 83px;
-  margin-left: 20px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -836,42 +828,40 @@ body {
 
 .breadcrumbs-link {
   padding: 0;
-  display: block;
 }
 
 
-.breadcrumbs-link.back::after {
+.breadcrumbs-items:not(:first-child)::before {
   content: "";
   background-image: url("../images/icons/breadcrumps-arrow.svg");
+  display: block;
   width: 5px;
   height: 8px;
-  display: block;
-  position: absolute;
-  left: 30px;
-  bottom: 0;
-  transform: translateY(-90%);
+  margin: 0 8px;
 }
 
 
 .breadcrumbs-link.back::before {
   content: "";
-  background-image: url("../images/icons/breadcrumps-home.svg");
-  display: block;
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  left: 5px;
-  bottom: 0;
-  transform: translateY(-60%);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  background-color: #ffffff;
+  mask: var(--icon) no-repeat center / cover;
+  box-sizing: border-box;
 }
 
+
+.back {
+  --icon: url("../images/icons/home.svg");
+}
 
 .breadcrumbs-link:hover {
   opacity: 60%;
 }
 
 
-.breadcrumbs-link:focus {
+.breadcrumbs-link:focus-visible {
   outline: 3px solid #83b3d3;
   outline-offset: 3px;
   box-sizing: border-box;
