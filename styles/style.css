@@ -1092,7 +1092,7 @@ summary::after {
   outline: 2px solid #83b3d3;
 }
 
-.show-card-item:focus-visible {
+.button-cards:focus-visible {
   outline: 2px solid #83b3d3;
 }
 
@@ -1107,27 +1107,37 @@ summary::after {
   border: none;
   max-width: 48px;
   max-height: 48px;
-  margin: 14px;
+  margin: 17px 16px;
+  padding: 0;
   cursor: pointer;
 }
 
-.cards {
+.cards::before {
   background-image: url("../images/icons/tile.svg");
-  width: 20px;
-  height: 20px;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 14px;
+  display: block;
+  content: "";
 }
 
 
-.slide {
+.slide::before {
   background-image: url("../images/icons/slideshow.svg");
-  width: 20px;
-  height: 20px;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 14px;
+  display: block;
+  content: "";
 }
 
-.list {
+.list::before {
   background-image: url("../images/icons/list.svg");
-  width: 20px;
-  height: 20px;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 14px;
+  display: block;
+  content: "";
 }
 
 .filter-catalog-title {
