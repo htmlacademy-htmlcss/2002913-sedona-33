@@ -1115,6 +1115,7 @@ summary::after {
 .cards::before {
   background-image: url("../images/icons/tile.svg");
   background-repeat: no-repeat;
+  background-position: center;
   width: 16px;
   height: 14px;
   display: block;
@@ -1125,6 +1126,7 @@ summary::after {
 .slide::before {
   background-image: url("../images/icons/slideshow.svg");
   background-repeat: no-repeat;
+  background-position: center;
   width: 16px;
   height: 14px;
   display: block;
@@ -1134,6 +1136,7 @@ summary::after {
 .list::before {
   background-image: url("../images/icons/list.svg");
   background-repeat: no-repeat;
+  background-position: center;
   width: 16px;
   height: 14px;
   display: block;
@@ -1247,8 +1250,10 @@ summary::after {
   background-color: #68a2ca;
   text-align: center;
   display: block;
+  box-sizing: border-box;
   width: 55px;
   height: 55px;
+  padding: 16px 0;
 }
 
 
