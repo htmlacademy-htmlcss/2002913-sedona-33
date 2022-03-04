@@ -1159,6 +1159,8 @@ summary::after {
 
 
 .catalog-hotel-list {
+  display: flex;
+  flex-direction: column;
   padding-top: 53px;
   padding-right: 72px;
   padding-left: 72px;
@@ -1222,23 +1224,32 @@ summary::after {
 
 .button-more {
   display: flex;
-  background-color: #68a2ca;
-  width: 620px;
-  height: 60px;
-  border-radius: 4px;
-  margin: 30px auto;
-  justify-content: center;
-  align-items: center;
 }
 
 .hotel-showmore-button {
   color: #ffffff;
+  background-color: #83b3d3;
   text-decoration: none;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  display: block;
+  display: inline-block;
+  width: 620px;
+  border-radius: 4px;
+  margin: 47px auto;
+  padding: 17px 0;
+  text-align: center;
+}
+
+.hotel-showmore-button:hover {
+  background-color: #68a2ca;
+}
+
+.hotel-showmore-button:focus-visible {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
+  outline-offset: -1px;
 }
 
 .pagination-link {
@@ -1247,13 +1258,30 @@ summary::after {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  background-color: #68a2ca;
+  background-color: #83b3d3;
   text-align: center;
   display: block;
   box-sizing: border-box;
+  border-radius: 4px;
   width: 55px;
   height: 55px;
   padding: 16px 0;
+}
+
+.pagination-link:hover {
+  background-color: #68a2ca;
+}
+
+
+.pagination-link:focus-visible {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
+  outline-offset: -1px;
+}
+
+.pagination-link:active {
+  background: #f2f2f2;
+  color: #000000;
 }
 
 
@@ -1261,7 +1289,12 @@ summary::after {
   padding: 30px 72px;
   padding-bottom: 0;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+
+.title-number-of-pages {
+  margin: 0;
+  margin-left: auto;
 }
 
 .pagination {
@@ -1271,9 +1304,18 @@ summary::after {
   list-style-type: none;
 }
 
+.select-shomore-hotel {
+  margin-left: 50px;
+}
+
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.select-shomore-hotel {
+  min-width: 160px;
+  padding: 16px 17px;
 }
 
 
@@ -1284,4 +1326,3 @@ summary::after {
   text-align: center;
   padding-top: 73px;
 }
-
