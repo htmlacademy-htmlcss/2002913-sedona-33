@@ -977,6 +977,7 @@ body {
   margin: 20px auto 0;
   font-size: 18px;
   line-height: 23px;
+  cursor: pointer;
 }
 
 .button-filter[type="reset"]:hover {
@@ -1004,6 +1005,60 @@ body {
 }
 
 
+summary {
+  list-style-type: none;
+  display: flex;
+  padding: 12px 20px;
+  outline: 2px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  max-height: 48px;
+  cursor: pointer;
+}
+
+
+summary:hover {
+  outline: 2px solid #83b3d3;
+}
+
+summary:focus-visible {
+  outline: 2px solid #83b3d3;
+}
+
+summary:active {
+  opacity: 30%;
+}
+
+
+summary::after {
+  content: "";
+  background-image: url("../images/icons/select-arrow.svg");
+  width: 12px;
+  height: 7px;
+  align-self: center;
+  margin-left: 94px;
+}
+
+
+.sorting-list {
+  list-style-type: none;
+  text-decoration: none;
+  position: absolute;
+  z-index: 1;
+  outline: 2px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 12px 20px;
+  margin: 5px 0;
+}
+
+
+.sorting-link {
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 2px solid #e6e6e6;
+}
+
 .show-card-button {
   display: flex;
   margin: 0;
@@ -1014,35 +1069,65 @@ body {
 
 
 .show-card-item {
-  width: 40px;
-  height: 40px;
-  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  outline: 2px solid #e6e6e6;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+
+.show-card-item:last-child {
+  margin-right: 0;
+}
+
+
+.show-card-item:hover {
+  outline: 2px solid #83b3d3;
+}
+
+.show-card-item:focus-visible {
+  outline: 2px solid #83b3d3;
+}
+
+.show-card-item:active {
+  outline: 2px solid #000000;
 }
 
 
 .button-cards {
-  position: absolute;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
-  width: 16px;
-  height: 14px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 48px;
+  max-height: 48px;
+  margin: 14px;
+  cursor: pointer;
 }
-
 
 .cards {
   background-image: url("../images/icons/tile.svg");
+  width: 20px;
+  height: 20px;
 }
+
 
 .slide {
   background-image: url("../images/icons/slideshow.svg");
+  width: 20px;
+  height: 20px;
 }
 
 .list {
   background-image: url("../images/icons/list.svg");
+  width: 20px;
+  height: 20px;
 }
 
 .filter-catalog-title {
@@ -1079,17 +1164,33 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
-
 
 .hotel-card-image {
-  order: -2;
+  order: -1;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-card-title-link {
+  text-decoration: none;
+  margin: 16px 0;
+}
+
+.hotel-card-title {
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;
+  line-height: 31px;
+  margin: 0;
 }
 
 
-.hotel-card-button-wrap {
-  display: flex;
+.hotel-card-description {
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden.four-stars {
