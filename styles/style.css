@@ -116,14 +116,13 @@ body {
 
 .button-dark:hover {
   background: #615048;
-  border-radius: 4px;
 }
 
 
 .button-dark:focus {
   background: #615048;
   outline: 3px solid #83b3d3;
-  border-radius: 4px;
+  outline-offset: -1px;
 }
 
 
@@ -143,6 +142,59 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   padding: 9px 15px;
+}
+
+
+.button-light:hover {
+  background: #68a2ca;
+  outline: 1px solid #756257;
+  outline-offset: -1px;
+}
+
+
+.button-light:focus-visible {
+  background: #68a2ca;
+  outline: 3px solid #756257;
+  outline-offset: -1px;
+}
+
+
+.button-light:active {
+  background: #68a2ca;
+  outline: 1px solid #756257;
+  outline-offset: -1px;
+  opacity: 60%;
+}
+
+.button-green {
+  color: #ffffff;
+  background-color: #7db54f;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 9px 15px;
+}
+
+
+.button-green:hover {
+  background: #6c9e42;
+  outline: 1px solid #756257;
+  outline-offset: -1px;
+}
+
+
+.button-green:focus-visible {
+  background: #6c9e42;
+  outline: 3px solid #756257;
+  outline-offset: -1px;
+}
+
+
+.button-green:active {
+  background: #6c9e42;
+  opacity: 60%;
 }
 
 .button-small {
@@ -1182,11 +1234,32 @@ summary::after {
   margin: 0;
 }
 
+.image-hotel {
+  display: block;
+}
+
 .hotel-card-image {
   order: -1;
   object-fit: cover;
   margin: 0;
   padding: 0;
+  display: block;
+}
+
+
+.hotel-card-image:hover {
+  opacity: 60%;
+}
+
+
+.hotel-card-image:focus-visible {
+  outline: 3px solid #83b3d3;
+  outline-offset: -1px;
+}
+
+
+.hotel-card-image:active {
+  opacity: 30%;
 }
 
 .hotel-card-title-link {
@@ -1202,10 +1275,19 @@ summary::after {
   margin: 0;
 }
 
+.hotel-card-button-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .hotel-card-description {
   margin: 0;
   padding: 0;
+}
+
+.hotel-card-button {
+  padding: 9px 21px;
 }
 
 .visually-hidden.four-stars {
@@ -1304,20 +1386,32 @@ summary::after {
   list-style-type: none;
 }
 
-.select-shomore-hotel {
-  margin-left: 50px;
-}
-
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
 
+
 .select-shomore-hotel {
+  margin-left: 50px;
   min-width: 160px;
   padding: 16px 17px;
 }
 
+.select-input-list {
+  list-style-type: none;
+  position: absolute;
+  padding: 10px 20px;
+  border: 2px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.select-input-link {
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 2px solid #e6e6e6;
+}
 
 .mailing-list-catalog {
   background-color: #ffffff;
