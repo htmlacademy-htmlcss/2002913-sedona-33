@@ -846,7 +846,12 @@ body {
 }
 
 
-.catalog-filter-button {
+.catalog-filter-group {
+  border: none;
+}
+
+
+.catalog-filter-group.button {
   display: flex;
   flex-direction: column;
   justify-content: center;
