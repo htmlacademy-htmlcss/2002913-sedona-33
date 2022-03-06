@@ -745,7 +745,7 @@ body {
   width: 115px;
   height: 34px;
   background-color: #000000;
-  mask: var(--icon) no-repeat center / cover;
+  mask: var(--icon) no-repeat center;
   margin: 18px 22px;
 }
 
@@ -794,7 +794,7 @@ body {
   width: 20px;
   height: 20px;
   background-color: #83b3d3;
-  mask: var(--icon) no-repeat center / cover;
+  mask: var(--icon) no-repeat center;
   box-sizing: border-box;
 }
 
@@ -848,6 +848,8 @@ body {
 
 .catalog-filter-group {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -905,7 +907,7 @@ body {
   height: 20px;
   display: flex;
   background-color: #ffffff;
-  mask: var(--icon) no-repeat center / cover;
+  mask: var(--icon) no-repeat center;
   box-sizing: border-box;
 }
 
@@ -945,12 +947,6 @@ body {
   margin: 0;
   padding-top: 35px;
   padding-left: 71px;
-}
-
-
-.catalog-filter-group {
-  margin: 0;
-  padding: 0;
 }
 
 
@@ -1283,12 +1279,61 @@ summary::after {
 .hotel-card-button-wrap {
   display: flex;
   justify-content: space-between;
+  margin: 16px 0;
 }
 
 
-.hotel-card-description {
+.hotel-card-description-price {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  color: #333333;
+}
+
+.hotel-card-description-rating {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+
+.stars::after {
+  content: "";
+  background-image: url("../images/icons/star.svg");
+  width: 25px;
+  height: 17px;
+  background-repeat: repeat-x;
+  background-position: left;
+  display: block;
+  margin: 10px 0;
+}
+
+.four-stars::after {
+  content: "";
+  width: 93px;
+  height: 17px;
+}
+
+.three-stars::after {
+  content: "";
+  width: 68px;
+  height: 17px;
+}
+
+
+.two-stars::after {
+  content: "";
+  width: 43px;
+  height: 17px;
+}
+
+.price-description {
+  min-width: 130px;
+}
+
+.hotel-card-price {
+  min-width: 143px;
 }
 
 .hotel-card-button {
@@ -1307,6 +1352,11 @@ summary::after {
   font-size: 16px;
   line-height: 21px;
   text-align: center;
+  width: 160px;
+  background-color: #f2f2f2;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 10px 0;
 }
 
 .button-more {
