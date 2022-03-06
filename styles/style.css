@@ -1122,26 +1122,34 @@ summary::after {
 
 
 .show-card-item {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
-  outline: 2px solid #e6e6e6;
-  border-radius: 4px;
-  box-sizing: border-box;
   margin-right: 8px;
-  cursor: pointer;
+  width: 48px;
+  height: 48px;
 }
 
 
-.show-card-item:last-child {
+.button-cards {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  width: 48px;
+  height: 48px;
+}
+
+
+.button-cards:last-child {
   margin-right: 0;
 }
 
 
-.show-card-item:hover {
+.button-cards:hover {
   outline: 2px solid #83b3d3;
 }
 
@@ -1149,28 +1157,16 @@ summary::after {
   outline: 2px solid #83b3d3;
 }
 
-.show-card-item:active {
+.button-cards:active {
   outline: 2px solid #000000;
-}
-
-
-.button-cards {
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  max-width: 48px;
-  max-height: 48px;
-  margin: 17px 16px;
-  padding: 0;
-  cursor: pointer;
 }
 
 .cards::before {
   background-image: url("../images/icons/tile.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 16px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   display: block;
   content: "";
 }
@@ -1180,8 +1176,8 @@ summary::after {
   background-image: url("../images/icons/slideshow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 16px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   display: block;
   content: "";
 }
@@ -1190,8 +1186,8 @@ summary::after {
   background-image: url("../images/icons/list.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 16px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   display: block;
   content: "";
 }
@@ -1201,7 +1197,7 @@ summary::after {
   line-height: 39px;
   text-transform: uppercase;
   margin: 0;
-  margin-right: 192px;
+  margin-right: auto;
 }
 
 
