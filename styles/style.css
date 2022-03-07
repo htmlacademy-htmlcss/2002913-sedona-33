@@ -849,7 +849,7 @@ body {
 .catalog-filter-group.button {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   margin-left: 80px;
 }
 
@@ -937,7 +937,7 @@ body {
   background-color: #68a2ca;
   background-image: url("../images/catalog/catalog-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   margin: 0;
   padding: 35px 72px 80px;
 }
@@ -946,6 +946,8 @@ body {
 .catalog-filter-group {
   border: none;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -954,6 +956,46 @@ body {
   padding: 0;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  margin-bottom: 13px;
+}
+
+
+.control-mark {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  left: 0;
+  top: 2px;
+}
+
+.control:hover .control-mark {
+  opacity: 60%;
+}
+
+.control:focus-within .control-mark {
+  opacity: 60%;
+  outline: 3px solid #83b3d3;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 30%;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  background-image: url("../images/icons/checkbox.svg");
+  width: 20px;
+  height: 20px;
+  display: block;
+  content: "";
+}
 
 .types {
   margin-left: 67px;
@@ -1151,12 +1193,12 @@ body {
 .button-filter[type="reset"] {
   background: transparent;
   border: none;
-  padding: 5px;
   color: #ffffff;
   display: inline-block;
   width: 100px;
   text-align: center;
-  margin: 20px auto 0;
+  padding: 14px 0 5px;
+  margin: 17px auto 0;
   font-size: 18px;
   line-height: 23px;
   cursor: pointer;

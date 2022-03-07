@@ -60,24 +60,29 @@
         </ul>
       </header>
         <h2 class="visually-hidden">список гостиниц с фильтрами</h2>
-        <form class="catalog-filter filter-container" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="catalog-filter filter-container" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="catalog-filter-group infrastructure">
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                    <input class="control-input" type="checkbox" name="check-item" value="pool" checked>
-                    Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="check-item" value="pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                    <input class="control-input" type="checkbox" name="check-item" value="parking" checked>Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="check-item" value="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                    <input class="control-input" type="checkbox" name="check-item" value="Wi-Fi">Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="check-item" value="Wi-Fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -111,11 +116,11 @@
             </legend>
           <div class="range-wrapper-inputs">
             <label class="catalog-filter-label">
-              <input class="range-input min-range" type="number" value="0">
+              <input class="range-input min-range" type="number" value="0" name="min-price">
               <span class="limit-price">от</span>
             </label>
             <label class="catalog-filter-label">
-              <input class="range-input max-range" type="number" value="9000">
+              <input class="range-input max-range" type="number" value="9000" name="max-price">
               <span class="limit-price">до</span>
             </label>
           </div>
@@ -136,7 +141,7 @@
       </section>
     <div class="filter-catalog">
       <h3 class="filter-catalog-title">Найдено гостиниц: 38</h3>
-        <form class="sorting-type">
+        <form class="sorting-type" method="post">
         <details class="select-control" aria-label="Сортировка">
           <summary>Сначала дешёвые</summary>
           <ul class="sorting-list">
@@ -300,7 +305,7 @@
           <p class="mailing-list-description">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form class="mailing-list-form" action="https://echo.htmlacademy.ru/">
+          <form class="mailing-list-form" action="https://echo.htmlacademy.ru/" method="post">
             <label><input class="subscript-field" type="email" placeholder="Ваш e-mail"></label>
             <button class="button-subscript" type="submit" value="subscript">Подписаться</button>
           </form>
