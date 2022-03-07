@@ -1349,7 +1349,8 @@ summary::after {
   outline: 2px solid #83b3d3;
 }
 
-.button-cards:active {
+.button-cards:active,
+.button-cards-current {
   outline: 2px solid #000000;
 }
 
@@ -1551,6 +1552,12 @@ summary::after {
   display: flex;
 }
 
+.wrap-hotel-showmore-button {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+}
+
 .hotel-showmore-button {
   color: #ffffff;
   background-color: #83b3d3;
@@ -1604,7 +1611,8 @@ summary::after {
   outline-offset: -1px;
 }
 
-.pagination-link:active {
+.pagination-link:active,
+.pagination-current {
   background: #f2f2f2;
   color: #000000;
 }
