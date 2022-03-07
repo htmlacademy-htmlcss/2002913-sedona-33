@@ -980,7 +980,6 @@ body {
 }
 
 .control:focus-within .control-mark {
-  opacity: 60%;
   outline: 3px solid #83b3d3;
   background-color: rgba(255, 255, 255, 0.6);
 }
@@ -996,6 +995,28 @@ body {
   display: block;
   content: "";
 }
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+  position: absolute;
+  background-image: url("../images/icons/radio.svg");
+  width: 20px;
+  height: 20px;
+  display: block;
+  content: "";
+}
+
+.control:focus-within .control-mark.radio {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.control:hover .control-mark.radio {
+  opacity: 1;
+}
+
 
 .types {
   margin-left: 67px;
