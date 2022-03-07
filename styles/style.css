@@ -945,25 +945,22 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   margin: 0;
-  padding-top: 35px;
-  padding-left: 71px;
+  padding: 35px 72px 80px;
 }
 
 
 .infrastructure {
-  margin-right: 67px;
+  margin-right: 0;
 }
 
 
 .types {
-  margin-right: 167px;
+  margin-right: 0;
 }
 
 
-.price {
-  margin-right: 80px;
-  width: 287px;
-  display: flex;
+.catalog-filter-group.price {
+  margin-right: 0;
   color: #ffffff;
 }
 
@@ -971,6 +968,19 @@ body {
 .control-input {
   background: transparent;
   color: #ffffff;
+  border: none;
+}
+
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+  width: 287px;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
 }
 
 .catalog-filter-list {
@@ -985,6 +995,64 @@ body {
   line-height: 78px;
   color: #ffffff;
   margin: 0;
+}
+
+
+.range-scale {
+  position: relative;
+  width: 287px;
+  height: 4px;
+  margin-top: 32px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus-visible {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  outline: 3px solid #83b3d3;
+}
+
+
+.range-toggle:active {
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+  outline: 2px solid #83b3d3;
+}
+
+.control-input::-webkit-outer-spin-button,
+.control-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
 }
 
 .button-filter[type="submit"] {

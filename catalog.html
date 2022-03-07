@@ -109,13 +109,22 @@
                 &#8381;
               </span>
             </legend>
+          <div class="range-wrapper-inputs">
             <label class="control">от
-              <input class="control-input" type="text" value="0">
+              <input class="control-input" type="number" value="0">
             </label>
             <label class="control">до
-              <input class="control-input" type="text" value="9000">
+              <input class="control-input" type="number" value="9000">
             </label>
-            <div class="slider"></div>
+          </div>
+            <div class="range">
+              <div class="range-scale">
+                <div class="range-bar" style="left: 10px;width: 217px;">
+                  <button type="button" class="range-toggle toggle-min"></button>
+                  <button type="button" class="range-toggle toggle-max"></button>
+                </div>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="catalog-filter-group button">
           <button class="button-filter " type="submit">применить</button>
