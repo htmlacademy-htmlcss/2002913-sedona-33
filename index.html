@@ -206,7 +206,11 @@
            </p>
            <p class="number-of-persons">
              <label class="adults number-of-persons-label" for="adults">Взрослые:</label>
-             <input class="number-of-persons-input" type="number" id="adults" name="adults">
+             <div>
+               <button class="number-minus" type="button"><span class="visually-hidden">Минус</span></button>
+                <input class="number-of-persons-input" type="number" id="adults" name="adults">
+               <button class="button-plus" type="button"><span class="visually hidden">Плюс</span></button>
+            </div>
              <label class="children number-of-persons-label" for="children">Дети:</label>
              <span class="tooltip">
                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>

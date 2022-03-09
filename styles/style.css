@@ -936,12 +936,21 @@ body {
   border-radius: 4px;
   border: none;
   padding: 15px 19px;
+  cursor: pointer;
 }
 
 .number-of-persons {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+}
+
+.number-of-persons-input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.number-of-persons-input::-webkit-outer-spin-button {
+  appearance: none;
 }
 
 .children {
