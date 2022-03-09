@@ -311,9 +311,9 @@ body {
   padding-bottom: 82px;
   background-color: #ffffff;
   background-image: url("../images/icons/divider.svg"), url("../images/index-background.jpg");
-  background-size: 100% auto;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: bottom, center;
+  background-position: bottom;
   text-align: center;
 }
 
@@ -834,6 +834,213 @@ body {
   --icon: url("../images/icons/yt.svg");
 }
 
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.8);
+}
+
+.modal-search {
+  width: 715px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 70px;
+  padding-top: 62px;
+  background: #ffffff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  width: 715px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  box-sizing: border-box;
+}
+
+
+.modal-close-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  width: 53px;
+  height: 53px;
+  top: 54px;
+  right: 70px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background: #e6e6e6;
+}
+
+.modal-close-button:focus-visible {
+  background: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.modal-close-button:active {
+  opacity: 30%;
+}
+
+.modal-close-button::before {
+  background-image: url("../images/icons/close-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  content: "";
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.date-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.date-label {
+  width: 155px;
+  min-width: 105px;
+}
+
+.date-input {
+  width: 420px;
+  min-width: 155px;
+  box-sizing: border-box;
+  background: #f2f2f2;
+  border-radius: 4px;
+  border: none;
+  padding: 15px 19px;
+}
+
+.number-of-persons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.children {
+  margin-left: auto;
+  width: 54px;
+}
+
+.adults {
+  width: 155px;
+}
+
+.number-of-persons-input {
+  width: 133px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+  padding: 17px 19px;
+}
+
+.tooltip {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-top: 2px;
+  margin-right: 18px;
+}
+
+.tooltip-toggle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #83b3d3;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 18px;
+}
+
+.tooltip-toggle:hover {
+  background: #68a2ca;
+}
+
+.tooltip-toggle::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 9px;
+  background-image: url("../images/icons/tooltip-toggle.svg");
+  background-repeat: no-repeat;
+}
+
+.tooltip-text {
+  color: #ffffff;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 125%;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  width: 256px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text::before {
+  content: "";
+  background-image: url("../images/icons/tooltip-arrow.svg");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(1px);
+}
+
+.button-modal-search {
+  width: 100%;
+}
 
 .catalog-body {
   font-family: "PT Sans", sans-serif;
