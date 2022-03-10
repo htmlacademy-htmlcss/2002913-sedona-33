@@ -935,11 +935,51 @@ body {
   background: #f2f2f2;
   border-radius: 4px;
   border: none;
-  padding: 15px 19px;
+  padding: 4px 19px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  opacity: 60%;
+  display: block;
+}
+
+.date-input:hover {
+  background: #e6e6e6;
+}
+
+.date-input:focus-visible {
+  background: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.date-input:active {
+  opacity: 1;
+  background-color: #ffffff;
+  outline: 2px solid #000000;
+}
+
+.date-input::after {
+  content: "";
+  display: block;
+  right: 19px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icons/date.svg");
+  opacity: 30%;
+  padding: 0;
+}
+
+
+::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: relative;
+  transform: translateX(90%);
+  z-index: 1;
   cursor: pointer;
 }
 
-.number-of-persons {
+.number-of-persons-wrap {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
@@ -962,14 +1002,86 @@ body {
   width: 155px;
 }
 
-.number-of-persons-input {
+.number-of-persons-input-wrap {
+  position: relative;
   width: 133px;
   background: #f2f2f2;
   border-radius: 4px;
+  display: flex;
+}
+
+.number-of-persons-input {
   box-sizing: border-box;
   border: none;
-  padding: 17px 19px;
+  outline: none;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+  display: block;
+  width: 100%;
+  background: #f2f2f2;
+  font-weight: 700;
+  font-size: 18px;
 }
+
+.button-minus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 15px;
+  border-radius: 4px;
+  opacity: 30%;
+}
+
+.button-minus::before {
+  background-image: url("../images/icons/minus.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  border: none;
+  display: block;
+  content: "";
+}
+
+.button-plus {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 15px;
+  border-radius: 4px;
+  opacity: 30%;
+}
+
+.button-plus::before {
+  background-image: url("../images/icons/plus.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  border: none;
+  display: block;
+  content: "";
+}
+
+.button-plus:hover,
+.button-minus:hover {
+  opacity: 1;
+}
+
+.button-plus:focus-visible,
+.button-minus:focus-visible {
+  outline: 3px solid #83b3d3;
+  opacity: 1;
+}
+
 
 .tooltip {
   position: relative;
@@ -1049,6 +1161,10 @@ body {
 
 .button-modal-search {
   width: 100%;
+}
+
+.modal-container-close {
+  display: none;
 }
 
 .catalog-body {
@@ -1887,3 +2003,4 @@ summary::after {
   text-align: center;
   padding-top: 73px;
 }
+
