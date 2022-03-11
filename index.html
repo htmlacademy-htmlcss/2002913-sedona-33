@@ -196,30 +196,35 @@
          <section class="modal-content">
            <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-           <p class="arrival date-form">
+           <div class="arrival date-form">
              <label class="arrival date-label" for="arrival-date-input">Дата заезда:</label>
-             <input class="arrival date-input" type="text" id="arrival-date-input" name="arrival-date-input" onfocus="(this.type = 'date')" min="2022-03-16" max="2024-03-16" placeholder="Укажите дату" required>
-           </p>
-           <p class="departure date-form">
+             <div class="date-input-wrap">
+               <input class="arrival date-input" type="text" id="arrival-date-input" name="arrival-date-input"  min="2022-03-16" max="2024-03-16" placeholder="Укажите дату" required>
+               <button class="calendar-button"></button>
+             </div>
+            </div>
+           <div class="departure date-form">
             <label class="date-label departure" for="date-of-departure-input">Дата выезда:</label>
-            <input class="date-input departure" type="text" id="date-of-departure-input" name="date-of-departure-input" onfocus="(this.type = 'date')" placeholder="Укажите дату" required>
-           </p>
+            <div class="date-input-wrap">
+              <input class="date-input departure" type="text" id="date-of-departure-input" name="date-of-departure-input"  placeholder="Укажите дату" required>
+              <button class="calendar-button"></button>
+            </div>
+          </div>
            <div class="number-of-persons-wrap">
              <label class="adults number-of-persons-label" for="adults">Взрослые:</label>
              <div class="number-of-persons-input-wrap">
                <button class="button-minus" type="button"><span class="visually-hidden">Минус</span></button>
-                <input class="number-of-persons-input" type="number" id="adults" name="adults">
+                <input class="number-of-persons-input" type="number" id="adults" name="adults" value="2">
                <button class="button-plus" type="button"><span class="visually-hidden">Плюс</span></button>
             </div>
              <label class="children number-of-persons-label" for="children">Дети:</label>
-
              <span class="tooltip">
                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей,<br> которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
              </span>
              <div class="number-of-persons-input-wrap">
               <button class="button-minus" type="button"><span class="visually-hidden">Минус</span></button>
-               <input class="number-of-persons-input" type="number" id="children" name="children">
+               <input class="number-of-persons-input" type="number" id="children" name="children" value="1">
               <button class="button-plus" type="button"><span class="visually-hidden">Плюс</span></button>
            </div>
           </div>

@@ -929,38 +929,60 @@ body {
   min-width: 105px;
 }
 
-.date-input {
+.date-input-wrap {
   width: 420px;
   min-width: 155px;
   box-sizing: border-box;
   background: #f2f2f2;
   border-radius: 4px;
   border: none;
-  padding: 4px 19px;
+  cursor: pointer;
+  opacity: 60%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.date-input {
+  padding: 5px 19px;
+  background: inherit;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  width: 100%;
   cursor: pointer;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
-  opacity: 60%;
-  display: block;
 }
 
-.date-input:hover {
+.date-input-wrap:hover {
   background: #e6e6e6;
 }
 
-.date-input:focus-visible {
+.date-input-wrap:focus-within {
   background: #e6e6e6;
   outline: 3px solid #83b3d3;
+  border: none;
 }
 
-.date-input:active {
+.date-input-wrap:active {
   opacity: 1;
   background-color: #ffffff;
   outline: 2px solid #000000;
 }
 
-.date-input::after {
+.calendar-button {
+  position: absolute;
+  right: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.calendar-button::after {
   content: "";
   display: block;
   right: 19px;
@@ -1111,6 +1133,11 @@ body {
   background: #68a2ca;
 }
 
+.tooltip-toggle:focus-visible {
+  background: #68a2ca;
+  outline: none;
+}
+
 .tooltip-toggle::before {
   content: "";
   display: block;
@@ -1165,9 +1192,9 @@ body {
   width: 100%;
 }
 
-.modal-container-close {
-  display: ;
-}
+/*.modal-container-close {
+  display: none;
+}*/
 
 .catalog-body {
   font-family: "PT Sans", sans-serif;
