@@ -1059,6 +1059,7 @@ body {
   margin: 15px;
   border-radius: 4px;
   opacity: 30%;
+  background-color: inherit;
 }
 
 .button-minus::before {
@@ -1083,6 +1084,7 @@ body {
   margin: 15px;
   border-radius: 4px;
   opacity: 30%;
+  background-color: inherit;
 }
 
 .button-plus::before {
@@ -1192,9 +1194,9 @@ body {
   width: 100%;
 }
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
-}*/
+}
 
 .catalog-body {
   font-family: "PT Sans", sans-serif;
