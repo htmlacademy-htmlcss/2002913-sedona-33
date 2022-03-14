@@ -31,6 +31,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  min-width: 1200px;
 }
 
 
@@ -291,16 +292,19 @@ body {
 }
 
 .navigation-user {
-  min-width: 280px;
+  min-width: 85px;
+  max-width: 120px;
   margin-left: auto;
-  margin-top: 13px;
+  margin-top: 14px;
   justify-content: end;
 }
 
 
 .navigation-button {
   width: 160px;
-  margin-left: 10px;
+  display: block;
+  box-sizing: border-box;
+  margin: 13px 0 19px 10px;
 }
 
 
@@ -502,7 +506,7 @@ body {
 
 .advantage-item-city {
   position: relative;
-  padding: 184px 110px 79px;
+  padding: 184px 75px 79px;
   background-color: #ffffff;
 }
 
@@ -516,7 +520,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 0 10px;
 }
 
 
@@ -591,7 +595,7 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   color: #ffffff;
-  padding-top: 94px;
+  padding-top: 92px;
   padding-bottom: 93px;
 }
 
@@ -611,9 +615,19 @@ body {
   margin-bottom: 30px;
 }
 
+.mailing-list-description-index {
+  margin: 0 auto 47px;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 26px;
+}
 
-.mailing-list-description {
+
+.mailing-list-description-catalog {
   margin: 0 340px 45px;
+  color: #333333;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 
@@ -627,6 +641,7 @@ body {
   color: #ffffff;
   width: 200px;
   display: inline-block;
+  box-sizing: border-box;
   border: 0;
   border-radius: 0 10px 10px 0;
 }
@@ -649,13 +664,14 @@ body {
 }
 
 .subscript-field {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 26px;
-  padding: 16px;
+  padding: 17px 22px;
   border: 0;
   border-radius: 10px 0 0 10px;
   background: #f2f2f2;
-  width: 564px;
+  box-sizing: border-box;
+  width: 600px;
 }
 
 
@@ -685,7 +701,9 @@ body {
   text-align: center;
   color: #000000;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 0;
+  margin-left: 48px;
+  margin-top: 2px;
 }
 
 
@@ -709,7 +727,6 @@ body {
 .main-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #ffffff;
   margin-bottom: 0;
   padding-top: 40px;
@@ -722,16 +739,18 @@ body {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  min-width: 110px;
+  width: 110px;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-top: 10px;
 }
 
 .footer-social-item {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  margin-right: 23px;
+  margin-bottom: 10px;
 }
 
 
@@ -747,7 +766,9 @@ body {
   height: 34px;
   background-color: #000000;
   mask: var(--icon);
-  margin: 18px 22px;
+  margin: 0;
+  margin-left: 45px;
+  margin-top: 4px;
 }
 
 
@@ -1059,7 +1080,7 @@ body {
   margin: 15px;
   border-radius: 4px;
   opacity: 30%;
-  background-color: inherit;
+  background-color: transparent;
 }
 
 .button-minus::before {
@@ -1084,7 +1105,7 @@ body {
   margin: 15px;
   border-radius: 4px;
   opacity: 30%;
-  background-color: inherit;
+  background-color: transparent;
 }
 
 .button-plus::before {
@@ -1214,23 +1235,25 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   margin-left: 80px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
   color: #ffffff;
-  margin: 0;
+  margin-top: -6px;
+  margin-left: 0;
   padding: 0;
   list-style-type: none;
   align-items: flex-end;
+  max-width: 800px;
 }
 
 
 .breadcrumbs-items {
   list-style-type: none;
-  margin-right: 0;
+  margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
@@ -1245,6 +1268,8 @@ body {
 
 .breadcrumbs-link {
   padding: 0;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 
@@ -1302,7 +1327,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  padding: 35px 72px 80px;
+  padding: 35px 72px 70px 70px;
 }
 
 
@@ -1382,7 +1407,7 @@ body {
 
 
 .types {
-  margin-left: 67px;
+  margin-left: 68px;
 }
 
 
@@ -1398,13 +1423,18 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
+
+.range {
+  margin-top: 5px;
+}
 
 .range-wrapper-inputs {
   display: flex;
   width: 288px;
+  margin-top: 5px;
 }
 
 .range-input {
@@ -1473,8 +1503,11 @@ body {
 
 .catalog-filter-list {
   list-style-type: none;
+  font-size: 18px;
+  line-height: 23px;
   margin: 0;
   padding: 0;
+  padding-left: 2px;
 }
 
 
@@ -1483,6 +1516,7 @@ body {
   line-height: 78px;
   color: #ffffff;
   margin: 0;
+  padding: 0;
 }
 
 
@@ -1582,7 +1616,7 @@ body {
   display: inline-block;
   width: 100px;
   text-align: center;
-  padding: 5px;
+  padding: 4px;
   margin: 17px auto 0;
   font-size: 18px;
   line-height: 23px;
@@ -1613,10 +1647,17 @@ body {
   padding: 44px 71px 0;
 }
 
+.select-control {
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
 
 summary {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   padding: 12px 20px;
   outline: 2px solid #e6e6e6;
   box-sizing: border-box;
@@ -1649,6 +1690,10 @@ summary::after {
   margin-left: 94px;
 }
 
+details summary::-webkit-details-marker {
+  display: none;
+}
+
 
 .sorting-list {
   list-style-type: none;
@@ -1670,6 +1715,8 @@ summary::after {
 
 .show-card-button {
   display: flex;
+  flex-wrap: wrap;
+  width: 180px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1679,6 +1726,7 @@ summary::after {
 
 .show-card-item {
   margin-right: 8px;
+  margin-bottom: 8px;
   width: 48px;
   height: 48px;
 }
@@ -1905,6 +1953,7 @@ summary::after {
   line-height: 21px;
   text-align: center;
   width: 160px;
+  color: #333333;
   background-color: #f2f2f2;
   text-transform: uppercase;
   border-radius: 4px;
@@ -1958,8 +2007,8 @@ summary::after {
   display: block;
   box-sizing: border-box;
   border-radius: 4px;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   padding: 16px 0;
 }
 
@@ -1985,6 +2034,7 @@ summary::after {
   padding: 30px 72px;
   padding-bottom: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -1995,14 +2045,18 @@ summary::after {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  max-width: 500px;
+  min-width: 300px;
 }
 
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 
