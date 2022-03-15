@@ -593,10 +593,10 @@ body {
   background-color: #83b3d3;
   background-image: url("../images/background-email.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   color: #ffffff;
-  padding-top: 92px;
-  padding-bottom: 93px;
+  padding: 92px 200px 93px;
 }
 
 .mailing-list-form {
@@ -612,7 +612,16 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 42px;
+}
+
+.mailing-list-title-index {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .mailing-list-description-index {
@@ -634,6 +643,7 @@ body {
 .button-subscript {
   font-size: 20px;
   line-height: 26px;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   background-color: #83b3d3;
@@ -1428,7 +1438,7 @@ body {
 
 
 .range {
-  margin-top: 5px;
+  padding-top: px;
 }
 
 .range-wrapper-inputs {
@@ -1644,7 +1654,7 @@ body {
   display: flex;
   justify-content: flex-start;
   margin: 0;
-  padding: 44px 71px 0;
+  padding: 45px 58px 0 71px;
 }
 
 .select-control {
@@ -1818,7 +1828,7 @@ details summary::-webkit-details-marker {
 .catalog-hotel-list {
   display: flex;
   flex-direction: column;
-  padding-top: 53px;
+  padding-top: 45px;
   padding-right: 72px;
   padding-left: 72px;
 }
@@ -1828,7 +1838,7 @@ details summary::-webkit-details-marker {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px 20px;
+  gap: 6px 20px;
 }
 
 
@@ -1968,6 +1978,7 @@ details summary::-webkit-details-marker {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
   display: flex;
+  margin-top: 26px;
 }
 
 .hotel-showmore-button {
@@ -1981,7 +1992,7 @@ details summary::-webkit-details-marker {
   display: inline-block;
   width: 620px;
   border-radius: 4px;
-  margin: 47px auto;
+  margin: 30px auto;
   padding: 17px 0;
   text-align: center;
 }
@@ -2031,7 +2042,7 @@ details summary::-webkit-details-marker {
 
 
 .pagination-container {
-  padding: 30px 72px;
+  padding: 29px 72px 22px 72px;
   padding-bottom: 0;
   display: flex;
   flex-wrap: wrap;
@@ -2041,6 +2052,10 @@ details summary::-webkit-details-marker {
 .title-number-of-pages {
   margin: 0;
   margin-left: auto;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #333333;
 }
 
 .pagination {
@@ -2063,7 +2078,7 @@ details summary::-webkit-details-marker {
 .select-shomore-hotel {
   margin-left: 50px;
   min-width: 160px;
-  padding: 16px 17px;
+  padding: 0;
 }
 
 .select-input-list {
@@ -2084,8 +2099,8 @@ details summary::-webkit-details-marker {
 .mailing-list-catalog {
   background-color: #ffffff;
   color: #000000;
-  height: 411px;
   text-align: center;
-  padding-top: 73px;
+  padding-top: 65px;
+  margin-bottom: 145px;
 }
 
