@@ -61,6 +61,12 @@ body {
 }
 
 
+.icon:disabled::before {
+  background: #cccccc;
+}
+
+
+
 .search {
   --icon: url("../images/icons/search.svg");
 }
@@ -133,6 +139,10 @@ body {
   text-transform: uppercase;
 }
 
+.button-dark:disabled {
+  background-color: #cccccc;
+}
+
 
 .button-light {
   color: #ffffff;
@@ -167,6 +177,10 @@ body {
   opacity: 60%;
 }
 
+.button-light:disabled {
+  background-color: #cccccc;
+}
+
 .button-green {
   color: #ffffff;
   background-color: #7db54f;
@@ -196,6 +210,10 @@ body {
 .button-green:active {
   background: #6c9e42;
   opacity: 60%;
+}
+
+.button-green:disabled {
+  background-color: #cccccc;
 }
 
 .button-small {
@@ -279,6 +297,10 @@ body {
 
 .navigation-link:active {
   opacity: 30%;
+}
+
+.navigation-link:disabled {
+  background-color: #cccccc;
 }
 
 .navigation-link-current::before {
@@ -501,6 +523,7 @@ body {
   text-align: center;
   margin: 0;
   margin-bottom: 80px;
+  padding: 0 240px;
 }
 
 
@@ -589,6 +612,10 @@ body {
   text-transform: uppercase;
 }
 
+.button-search-hotel:disabled {
+  background-color: #cccccc;
+}
+
 .mailing-list {
   background-color: #83b3d3;
   background-image: url("../images/background-email.jpg");
@@ -673,6 +700,10 @@ body {
   opacity: 30%;
 }
 
+.button-subscript:disabled {
+  background-color: #cccccc;
+}
+
 .subscript-field {
   font-size: 18px;
   line-height: 26px;
@@ -699,6 +730,10 @@ body {
 .subscript-field:invalid {
   outline: 2px solid #ff5757;
   background: #ffffff;
+}
+
+.subscript-field:disabled {
+  background-color: #cccccc;
 }
 
 
@@ -731,6 +766,10 @@ body {
 
 .footer-contacts-phone:active {
   opacity: 30%;
+}
+
+.footer-contacts-phone:disabled {
+  background-color: #cccccc;
 }
 
 
@@ -844,6 +883,10 @@ body {
   border-radius: 4px;
   width: 20px;
   height: 20px;
+}
+
+.button-social:disabled::before {
+  background-color: #cccccc;
 }
 
 
@@ -1003,6 +1046,10 @@ body {
   outline: 2px solid #000000;
 }
 
+.date-input-wrap:disabled {
+  background-color: #cccccc;
+}
+
 .calendar-button {
   position: absolute;
   right: 19px;
@@ -1079,6 +1126,11 @@ body {
   font-size: 18px;
   appearance: textfield;
 }
+
+.number-of-persons-input:disabled {
+  background-color: #cccccc;
+}
+
 
 .button-minus {
   display: flex;
@@ -1169,6 +1221,10 @@ body {
 .tooltip-toggle:focus-visible {
   background: #68a2ca;
   outline: none;
+}
+
+.tooltip-toggle:disabled {
+  background-color: #cccccc;
 }
 
 .tooltip-toggle::before {
@@ -1437,10 +1493,6 @@ body {
 }
 
 
-.range {
-  padding-top: px;
-}
-
 .range-wrapper-inputs {
   display: flex;
   width: 288px;
@@ -1456,6 +1508,10 @@ body {
   color: #ffffff;
   box-sizing: border-box;
   appearance: textfield;
+}
+
+.range-input:disabled {
+  background-color: #cccccc;
 }
 
 
@@ -1495,6 +1551,11 @@ body {
 .max-range:active,
 .min-range:active {
   background-color: #756257;
+}
+
+.max-range:disabled,
+.min-range:disabled {
+  background-color: #cccccc;
 }
 
 
@@ -1570,6 +1631,10 @@ body {
   outline: 2px solid #83b3d3;
 }
 
+.range-toggle:disabled {
+  background-color: #cccccc;
+}
+
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
@@ -1618,6 +1683,10 @@ body {
   opacity: 30%;
 }
 
+.button-filter[type="submit"]:disabled {
+  background-color: #cccccc;
+}
+
 
 .button-filter[type="reset"] {
   background: transparent;
@@ -1647,6 +1716,11 @@ body {
 
 .button-filter[type="reset"]:active {
   opacity: 30%;
+}
+
+
+.button-filter[type="reset"]:disabled {
+  opacity: 60%;
 }
 
 
@@ -1690,6 +1764,9 @@ summary:active {
   opacity: 30%;
 }
 
+summary:disabled {
+  background-color: #cccccc;
+}
 
 summary::after {
   content: "";
@@ -1777,6 +1854,10 @@ details summary::-webkit-details-marker {
 .button-cards-current {
   outline: 2px solid #000000;
   outline-offset: -1px;
+}
+
+.button-cards:disabled {
+  background-color: #cccccc;
 }
 
 .cards::before {
@@ -1875,6 +1956,10 @@ details summary::-webkit-details-marker {
 
 .hotel-card-image:active {
   opacity: 30%;
+}
+
+.hotel-card-image:disabled {
+  opacity: 60%;
 }
 
 
@@ -2007,6 +2092,10 @@ details summary::-webkit-details-marker {
   outline-offset: -1px;
 }
 
+.hotel-showmore-button:disabled {
+  background-color: #cccccc;
+}
+
 .pagination-link {
   text-decoration: none;
   color: #ffffff;
@@ -2040,6 +2129,9 @@ details summary::-webkit-details-marker {
   color: #000000;
 }
 
+.pagination-link:disabled {
+  background-color: #cccccc;
+}
 
 .pagination-container {
   padding: 29px 72px 22px 72px;
