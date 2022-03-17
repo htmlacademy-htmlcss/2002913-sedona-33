@@ -825,14 +825,20 @@ body {
 }
 
 
+.footer-logo-htmlacademy:focus-visible::before {
+  border: none;
+  background: #756257;
+}
+
 .footer-logo-htmlacademy:focus-visible {
+  border: none;
   outline: 3px solid #83b3d3;
   border-radius: 10px;
-  border: none;
 }
 
 .footer-logo-htmlacademy:active::before {
   opacity: 30%;
+  background: #756257;
 }
 
 .footer-logo-htmlacademy {
@@ -1301,9 +1307,9 @@ body {
 }
 
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .catalog-body {
   font-family: "PT Sans", sans-serif;
