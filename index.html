@@ -158,7 +158,7 @@
         Только полезная информация и никакого спама,<br> честное бойскаутское!
       </p>
       <form class="mailing-list-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label><input class="subscript-field" type="email" placeholder="Ваш e-mail"></label>
+        <label><input class="subscript-field" type="email" placeholder="Ваш e-mail"><span class="visually-hidden">Ваш e-mail</span></label>
         <button class="button-subscript button-large button-light" type="submit" value="subscript">Подписаться</button>
       </form>
     </section>
@@ -204,17 +204,19 @@
             <label class="arrival date-label" for="arrival-date-input">Дата заезда:</label>
             <div class="date-input-wrap">
               <input class="arrival date-input" type="text" id="arrival-date-input" name="arrival-date-input"
-                placeholder="Укажите дату" required>
+                placeholder="Укажите дату" value="27 апреля 2020" aria-describedby="input-message" required>
               <button class="calendar-button" type="button"><span class="visually-hidden">Календарь.</span></button>
             </div>
+            <div class="input-message message-error" id="input-message">Мы не можем отправить вас в прошлое.</div>
           </div>
           <div class="departure date-form">
             <label class="date-label departure" for="date-of-departure-input">Дата выезда:</label>
             <div class="date-input-wrap">
               <input class="date-input departure" type="text" id="date-of-departure-input"
-                name="date-of-departure-input" placeholder="Укажите дату" required>
+                name="date-of-departure-input" placeholder="Укажите дату" value="1 сентября 2021" aria-describedby="input-message" required>
               <button class="calendar-button" type="button"><span class="visually-hidden">Календарь.</span></button>
             </div>
+            <div class="input-message message-success" id="input-message">На эти даты есть свободные номера. Пока есть.</div>
           </div>
           <div class="number-of-persons-wrap">
             <label class="adults number-of-persons-label" for="adults">Взрослые:</label>

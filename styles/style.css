@@ -335,7 +335,8 @@ body {
   margin-top: 0;
   padding-top: 51px;
   padding-bottom: 82px;
-  background-color: #ffffff;
+  background-color: #333333;
+
   background-image: url("../images/icons/divider.svg"), url("../images/index-background.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -746,8 +747,9 @@ body {
   text-align: center;
   color: #000000;
   box-sizing: border-box;
-  padding: 0;
-  margin-left: 50px;
+  padding: 10px;
+  margin-left: 13px;
+  margin-top: 2px;
 }
 
 
@@ -777,10 +779,10 @@ body {
   justify-content: space-between;
   background-color: #ffffff;
   margin-bottom: 0;
-  padding-top: 37px;
+  padding-top: 28px;
   padding-bottom: 30px;
   padding-left: 72px;
-  padding-right: 72px;
+  padding-right: 60px;
 }
 
 
@@ -791,7 +793,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-top: 6px;
+  margin-top: 18px;
 }
 
 .footer-social-item {
@@ -811,12 +813,10 @@ body {
   content: "";
   display: block;
   width: 115px;
-  height: 34px;
+  height: 33px;
   background-color: #000000;
   mask: var(--icon);
   margin: 0;
-  margin-left: 45px;
-  margin-top: 4px;
 }
 
 
@@ -826,11 +826,9 @@ body {
 
 
 .footer-logo-htmlacademy:focus-visible {
-  display: block;
   outline: 3px solid #83b3d3;
   border-radius: 10px;
-  width: 160px;
-  height: 70px;
+  border: none;
 }
 
 .footer-logo-htmlacademy:active::before {
@@ -839,9 +837,9 @@ body {
 
 .footer-logo-htmlacademy {
   --icon: url("../images/icons/logo-htmlacademy.svg");
-  width: 160px;
-  height: 70px;
-  margin-top: -3px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15px 10px 5px 10px;
 }
 
 
@@ -931,8 +929,7 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 70px;
-  padding-top: 62px;
+  padding: 60px 70px 70px 69px;
   background: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
@@ -989,18 +986,39 @@ body {
   font-size: 30px;
   line-height: 40px;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin: 0;
+  margin-bottom: 62px;
 }
 
 .date-form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 0;
+}
+
+.input-message {
+  margin: 0;
+  margin-top: -7px;
+  margin-bottom: 7px;
+  margin-left: auto;
+  padding: 0;
+  width: 420px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.message-error {
+  color: #ff5757;
 }
 
 .date-label {
   width: 155px;
   min-width: 105px;
+  margin-top: 5px;
+  margin-left: 1px;
 }
 
 .date-input-wrap {
@@ -1011,7 +1029,6 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  opacity: 60%;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -1052,7 +1069,7 @@ body {
 
 .calendar-button {
   position: absolute;
-  right: 19px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   border: none;
@@ -1245,7 +1262,7 @@ body {
   line-height: 125%;
   font-weight: 400;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 23px 22px;
   width: 256px;
   box-sizing: border-box;
   position: absolute;
@@ -1279,12 +1296,14 @@ body {
 
 .button-modal-search {
   width: 100%;
+  border-radius: 10px;
+  padding: 17px;
 }
 
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .catalog-body {
   font-family: "PT Sans", sans-serif;
