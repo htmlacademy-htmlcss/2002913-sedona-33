@@ -1763,10 +1763,11 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  margin-right: 76px;
 }
 
 
-summary {
+.select {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -1780,23 +1781,23 @@ summary {
 }
 
 
-summary:hover {
+.select:hover {
   outline: 2px solid #83b3d3;
 }
 
-summary:focus-visible {
+.select:focus-visible {
   outline: 2px solid #83b3d3;
 }
 
-summary:active {
+.select:active {
   opacity: 30%;
 }
 
-summary:disabled {
+.select:disabled {
   background-color: #cccccc;
 }
 
-summary::after {
+.select::after {
   content: "";
   background-image: url("../images/icons/select-arrow.svg");
   width: 12px;
@@ -1805,7 +1806,7 @@ summary::after {
   margin-left: 100px;
 }
 
-details summary::-webkit-details-marker {
+.select::-webkit-details-marker {
   display: none;
 }
 
